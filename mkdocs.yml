@@ -13,6 +13,10 @@ site_description: >-
   Open, brand-free drivers, firmware building blocks and tools for embedded systems.
 repo_url: https://github.com/kokeb-labs/kokeb-labs.github.io
 
+# The figure index is linked from each figure's caption, not from the tabs.
+not_in_nav: |
+  /diagrams/index.md
+
 theme:
   name: kokeb
 
