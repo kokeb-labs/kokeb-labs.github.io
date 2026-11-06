@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Open, brand-free drivers, firmware building blocks and tools for embedded systems.">
+        <meta name="description" content="What Kokeb Labs is building, in order, and how to follow along.">
       
       
       
@@ -102,7 +102,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Kokeb Labs">
   <meta property="og:title" content="Roadmap - Kokeb Labs">
-  <meta property="og:description" content="Open, brand-free drivers, firmware building blocks and tools for embedded systems.">
+  <meta property="og:description" content="What Kokeb Labs is building, in order, and how to follow along.">
   <meta property="og:url" content="https://kokeb-labs.github.io/roadmap/">
   <meta name="twitter:card" content="summary">
   <script>
@@ -398,25 +398,6 @@
   
 
       
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../diagrams/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Figures
-
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -560,6 +541,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -576,6 +575,36 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#follow-along" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Follow along
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -608,33 +637,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../diagrams/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Figures
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -654,6 +656,25 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#follow-along" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Follow along
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -681,21 +702,38 @@
 <h1 id="roadmap">Roadmap<a class="headerlink" href="#roadmap" title="Permanent link">&para;</a></h1>
 <div class="kb-steps">
 <ol>
-<li><strong>Foundations</strong> (done). The organisation, <code>ci-tools</code> v1, <code>espidf-tools</code> v1, <code>driver-template</code>, this site.</li>
-<li><strong>Drivers.</strong> Chip drivers move in from HardFOC, renamed <code>driver-&lt;chip&gt;</code>, each with host tests and an ESP32
-   example.</li>
-<li><strong>kb-core.</strong> One repository with <code>kb::utils</code>, <code>kb::rtos</code>, <code>kb::interfaces</code> and <code>kb::handlers</code>.</li>
-<li><strong>Hardware abstraction.</strong> MCU ports under <code>interfaces/mcu/&lt;family&gt;/</code>, starting with ESP32.</li>
-<li><strong>HardFOC on Kokeb.</strong> The HardFOC boards build on these drivers and kb-core.</li>
-<li><strong>Tools for users.</strong> A command-line tool, a board configurator and a documentation hub.</li>
+<li><strong>Foundations</strong> <span class="kb-badge kb-badge--teal">Done</span>
+   The organisation and its settings as code, <code>ci-tools</code> v1, <code>espidf-tools</code> v1, <code>driver-template</code>, the documentation
+   platform and this site.</li>
+<li><strong>Chip drivers</strong> <span class="kb-badge kb-badge--amber">Next</span>
+   Drivers move in from HardFOC one chip at a time, renamed <code>driver-&lt;chip&gt;</code>, each with host tests, an ESP32 example
+   and a docs site.</li>
+<li><strong>kb-core</strong>
+   One repository with <code>kb::utils</code>, <code>kb::rtos</code>, <code>kb::interfaces</code> and <code>kb::handlers</code>. Pick your MCU, RTOS and drivers
+   in one CMake file; only what you pick is built.</li>
+<li><strong>MCU ports</strong>
+   Ready-made ports under <code>interfaces/mcu/&lt;family&gt;/</code>, starting with ESP32, then STM32 and the host.</li>
+<li><strong>HardFOC on Kokeb</strong>
+   The HardFOC motor-control boards build on these drivers and kb-core.</li>
+<li><strong>Tools for users</strong>
+   A command-line tool, a board configurator and a documentation hub.</li>
 </ol>
 </div>
+<h2 id="follow-along">Follow along<a class="headerlink" href="#follow-along" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Releases:</strong> watch a repository on GitHub (Watch, Custom, Releases).</li>
+<li><strong>Discussions:</strong> questions and ideas in the <a href="https://github.com/kokeb-labs/.github/discussions">discussions</a>.</li>
+<li><strong>Driver requests</strong> shape step 2: <a href="https://github.com/kokeb-labs/.github/issues/new?template=driver-request.yml">ask for a chip</a>.</li>
+</ul>
 
 
 
 
 
 
+
+  
+  
 
 
 

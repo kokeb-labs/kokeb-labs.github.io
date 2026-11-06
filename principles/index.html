@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Open, brand-free drivers, firmware building blocks and tools for embedded systems.">
+        <meta name="description" content="The rules every Kokeb Labs driver and repository follows, and why.">
       
       
       
@@ -102,7 +102,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Kokeb Labs">
   <meta property="og:title" content="How we build - Kokeb Labs">
-  <meta property="og:description" content="Open, brand-free drivers, firmware building blocks and tools for embedded systems.">
+  <meta property="og:description" content="The rules every Kokeb Labs driver and repository follows, and why.">
   <meta property="og:url" content="https://kokeb-labs.github.io/principles/">
   <meta name="twitter:card" content="summary">
   <script>
@@ -398,25 +398,6 @@
   
 
       
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../diagrams/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Figures
-
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -584,10 +565,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#brand-free-drivers" class="md-nav__link">
+  <a href="#a-driver-never-touches-the-sdk" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Brand-free drivers
+        A driver never touches the SDK
       
     </span>
   </a>
@@ -595,10 +576,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#three-kinds-of-specific" class="md-nav__link">
+  <a href="#predictable-on-small-mcus" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Three kinds of "specific"
+        Predictable on small MCUs
       
     </span>
   </a>
@@ -606,10 +587,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#every-repository-the-same-checks" class="md-nav__link">
+  <a href="#brand-free" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Every repository, the same checks
+        Brand-free
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tested-without-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tested without hardware
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-same-checks-in-every-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The same checks in every repository
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supply-chain-hygiene" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supply-chain hygiene
       
     </span>
   </a>
@@ -689,33 +703,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../diagrams/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Figures
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -743,10 +730,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#brand-free-drivers" class="md-nav__link">
+  <a href="#a-driver-never-touches-the-sdk" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Brand-free drivers
+        A driver never touches the SDK
       
     </span>
   </a>
@@ -754,10 +741,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#three-kinds-of-specific" class="md-nav__link">
+  <a href="#predictable-on-small-mcus" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Three kinds of "specific"
+        Predictable on small MCUs
       
     </span>
   </a>
@@ -765,10 +752,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#every-repository-the-same-checks" class="md-nav__link">
+  <a href="#brand-free" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Every repository, the same checks
+        Brand-free
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tested-without-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tested without hardware
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-same-checks-in-every-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The same checks in every repository
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supply-chain-hygiene" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supply-chain hygiene
       
     </span>
   </a>
@@ -812,15 +832,44 @@
 
 
 <h1 id="how-we-build">How we build<a class="headerlink" href="#how-we-build" title="Permanent link">&para;</a></h1>
-<h2 id="brand-free-drivers">Brand-free drivers<a class="headerlink" href="#brand-free-drivers" title="Permanent link">&para;</a></h2>
-<p>A driver is named after its chip, not after a product: repository <code>driver-&lt;chip&gt;</code>, namespace <code>&lt;chip&gt;::</code>. It never
-calls an MCU SDK. It calls a few hooks (transfer, GPIO, delay) on a port class you write, checked at compile time
-with no virtual calls, so the same driver runs on ESP-IDF, STM32, Zephyr, Linux and on the host for tests.</p>
-<h2 id="three-kinds-of-specific">Three kinds of "specific"<a class="headerlink" href="#three-kinds-of-specific" title="Permanent link">&para;</a></h2>
+<h2 id="a-driver-never-touches-the-sdk">A driver never touches the SDK<a class="headerlink" href="#a-driver-never-touches-the-sdk" title="Permanent link">&para;</a></h2>
+<p>A driver is the chip's datasheet turned into C++: registers, timing, modes and errors. Everything that depends on
+your MCU sits behind a small port class that you write, and the driver only calls its hooks.</p>
 <table>
 <thead>
 <tr>
-<th>Kind</th>
+<th>The driver owns</th>
+<th>Your port owns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Register framing, reset and chip-ID checks, conversions, CRCs</td>
+<td>Bringing the bus up, moving bytes, optional GPIO, delay and log hooks</td>
+</tr>
+<tr>
+<td>Units, ranges and <code>Config</code> presets with datasheet defaults</td>
+<td>Pins, clocks, DMA, locking, which SPI or I2C peripheral</td>
+</tr>
+</tbody>
+</table>
+<p>The port derives from the driver's interface with CRTP (<code>class MyPort : public chip::SpiInterface&lt;MyPort&gt;</code>) and a
+C++20 concept checks every required hook at compile time. There are no virtual calls, so the compiler can
+inline the port into the driver.</p>
+<h2 id="predictable-on-small-mcus">Predictable on small MCUs<a class="headerlink" href="#predictable-on-small-mcus" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>No exceptions, no heap, no RTTI.</strong> Every call returns <code>Result&lt;T&gt;</code>: a value, or an <code>Error</code> that says what went
+  wrong (<code>Bus</code>, <code>Timeout</code>, <code>DeviceIdMismatch</code>, chip-specific faults).</li>
+<li><strong>Nothing happens in a constructor.</strong> <code>Initialize()</code> does the first I/O, so you decide when the bus is touched.</li>
+<li><strong>Bounded waits.</strong> A driver never blocks forever on a busy flag.</li>
+</ul>
+<h2 id="brand-free">Brand-free<a class="headerlink" href="#brand-free" title="Permanent link">&para;</a></h2>
+<p>A driver is named after its chip, not after a product: repository <code>driver-&lt;chip&gt;</code>, namespace <code>&lt;chip&gt;::</code>. A product's
+pin map or modes never go into a shared repository.</p>
+<table>
+<thead>
+<tr>
+<th>Kind of "specific"</th>
 <th>Example</th>
 <th>Where it lives</th>
 </tr>
@@ -829,27 +878,60 @@ with no virtual calls, so the same driver runs on ESP-IDF, STM32, Zephyr, Linux 
 <tr>
 <td>Chip-specific</td>
 <td>the registers of one sensor</td>
-<td>in that chip's driver</td>
+<td>that chip's driver</td>
 </tr>
 <tr>
 <td>MCU-specific</td>
 <td>an ESP-IDF SPI port</td>
-<td>under <code>interfaces/mcu/&lt;family&gt;/</code>, built only for that family</td>
+<td><code>interfaces/mcu/&lt;family&gt;/</code> in kb-core, built only for that family</td>
 </tr>
 <tr>
 <td>Product-specific</td>
 <td>one product's pin map or modes</td>
-<td>never in a shared repository; products use extension points</td>
+<td>the product's own repository, through extension points</td>
 </tr>
 </tbody>
 </table>
-<h2 id="every-repository-the-same-checks">Every repository, the same checks<a class="headerlink" href="#every-repository-the-same-checks" title="Permanent link">&para;</a></h2>
-<ul>
-<li>A strict documentation build, figure and generated-table drift checks, link checks.</li>
-<li>C++ builds and host tests, clang-tidy and cppcheck over the same compile database.</li>
-<li>A DCO sign-off on every commit, an MIT licence and the required root files.</li>
-<li>One required check, <code>CI gate</code>, and every third-party action pinned to a commit SHA.</li>
-</ul>
+<h2 id="tested-without-hardware">Tested without hardware<a class="headerlink" href="#tested-without-hardware" title="Permanent link">&para;</a></h2>
+<p>Every driver builds and runs its tests on the host with CMake and <code>ctest</code>: a simulated chip answers like the real
+one, error paths are forced, and compile-fail tests check that a broken port does not compile. Hardware tests are
+labelled <code>needs-hardware</code> and <code>hardware-verified</code> on pull requests.</p>
+<h2 id="the-same-checks-in-every-repository">The same checks in every repository<a class="headerlink" href="#the-same-checks-in-every-repository" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>What it catches</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Strict docs build, link check, figure and generated-table drift</td>
+<td>Broken links, stale diagrams, docs that disagree with the code</td>
+</tr>
+<tr>
+<td>Host build and tests, clang-tidy, cppcheck</td>
+<td>Bugs, undefined behaviour, the port contract</td>
+</tr>
+<tr>
+<td>clang-format, markdownlint, yamllint</td>
+<td>Style drift</td>
+</tr>
+<tr>
+<td>DCO sign-off, required files, MIT licence</td>
+<td>Provenance and licensing</td>
+</tr>
+<tr>
+<td><code>CI gate</code></td>
+<td>One required check that passes only when everything else did</td>
+</tr>
+</tbody>
+</table>
+<h2 id="supply-chain-hygiene">Supply-chain hygiene<a class="headerlink" href="#supply-chain-hygiene" title="Permanent link">&para;</a></h2>
+<p>Every third-party GitHub Action is pinned to a commit SHA on a real release tag and reviewed before it is allowed
+in the organisation; tools without a trusted action are downloaded from their own release and checked against a
+pinned SHA-256. Dependabot keeps the pins current. Secret scanning with push protection, Dependabot alerts and
+CodeQL are on for every repository.</p>
 <h2 id="licence-and-sign-off">Licence and sign-off<a class="headerlink" href="#licence-and-sign-off" title="Permanent link">&para;</a></h2>
 <p>Everything is MIT licensed, <code>Copyright (c) 2026 The Kokeb Labs Authors</code>. There is no CLA: you sign off each commit
 (<code>git commit -s</code>) to certify the <a href="https://developercertificate.org/">Developer Certificate of Origin</a>.</p>
@@ -859,6 +941,9 @@ with no virtual calls, so the same driver runs on ESP-IDF, STM32, Zephyr, Linux 
 
 
 
+
+  
+  
 
 
 

@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Open, brand-free drivers, firmware building blocks and tools for embedded systems.">
+        <meta name="description" content="Open-source C++20 chip drivers and firmware building blocks that run on any MCU and test on your laptop.">
       
       
       
@@ -25,7 +25,7 @@
     
     
       
-        <title>Kokeb Labs</title>
+        <title>Embedded C++ for any MCU - Kokeb Labs</title>
       
     
     
@@ -99,8 +99,8 @@
   <meta name="theme-color" content="#1b2140" media="(prefers-color-scheme: dark)">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Kokeb Labs">
-  <meta property="og:title" content="Kokeb Labs">
-  <meta property="og:description" content="Open, brand-free drivers, firmware building blocks and tools for embedded systems.">
+  <meta property="og:title" content="Embedded C++ for any MCU - Kokeb Labs">
+  <meta property="og:description" content="Open-source C++20 chip drivers and firmware building blocks that run on any MCU and test on your laptop.">
   <meta property="og:url" content="https://kokeb-labs.github.io/">
   <meta name="twitter:card" content="summary">
   <script>
@@ -186,7 +186,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#kokeb-labs" class="md-skip">
+        <a href="#write-the-driver-once-run-it-on-any-mcu" class="md-skip">
           Skip to content
         </a>
       
@@ -224,7 +224,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Embedded C++ for any MCU
             
           </span>
         </div>
@@ -396,25 +396,6 @@
   
 
       
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="diagrams/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Figures
-
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -530,10 +511,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#start-here" class="md-nav__link">
+  <a href="#why-its-different" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Start here
+        Why it's different
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-a-port-looks-like" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What a port looks like
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#available-today" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Available today
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-to-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where to start
       
     </span>
   </a>
@@ -656,33 +670,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="diagrams/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Figures
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -712,10 +699,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#start-here" class="md-nav__link">
+  <a href="#why-its-different" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Start here
+        Why it's different
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-a-port-looks-like" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What a port looks like
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#available-today" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Available today
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-to-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where to start
       
     </span>
   </a>
@@ -750,15 +770,58 @@
 
 
 <div class="kb-hero">
-<p><span class="kb-kicker">Open-source embedded software</span></p>
-<h1 id="kokeb-labs">Kokeb Labs<a class="headerlink" href="#kokeb-labs" title="Permanent link">&para;</a></h1>
-<p>Open, brand-free drivers, firmware building blocks and tools for embedded systems. Every chip driver works on
-any MCU through a small port you write, builds and tests on a laptop, and ships with documentation and CI.
-Everything is MIT licensed.</p>
-<p><a class="md-button md-button--primary" href="projects/">Browse the projects</a>
-<a class="md-button" href="principles/">How we build</a>
+<p><span class="kb-kicker">Open-source embedded C++</span></p>
+<h1 id="write-the-driver-once-run-it-on-any-mcu">Write the driver once. Run it on any MCU.<a class="headerlink" href="#write-the-driver-once-run-it-on-any-mcu" title="Permanent link">&para;</a></h1>
+<p>Chip drivers and firmware building blocks in C++20 that never call a vendor SDK. Give a driver two small
+functions for your bus and the same code runs on ESP32, STM32, RP2040 or your laptop, where its tests run without
+hardware. MIT licensed.</p>
+<p><a class="md-button md-button--primary" href="https://github.com/kokeb-labs/driver-template">Start a driver</a>
+<a class="md-button" href="projects/">See what's here</a>
 <a class="md-button" href="https://github.com/kokeb-labs">GitHub</a></p>
 </div>
+<h2 id="why-its-different">Why it's different<a class="headerlink" href="#why-its-different" title="Permanent link">&para;</a></h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><strong>You write the port, not the driver</strong></p>
+<hr />
+<p>A driver needs two functions from you: bring the bus up, and move bytes. A C++20 concept checks them at
+compile time, so a missing or wrong hook is a compile error, not a crash on the bench.</p>
+</li>
+<li>
+<p><strong>Tests before the board arrives</strong></p>
+<hr />
+<p>Every driver builds and runs its tests on the host against a simulated chip. Compile-fail tests prove the
+port contract rejects what it should.</p>
+</li>
+<li>
+<p><strong>Small and predictable</strong></p>
+<hr />
+<p>Every call returns <code>Result&lt;T&gt;</code> with an error code. No exceptions, no heap, no RTTI, no virtual calls, so it
+fits small MCUs and safety reviews.</p>
+</li>
+</ul>
+</div>
+<p>Every repository also comes with the same documentation site, lint, static analysis, sign-off check and one
+required check, from shared workflows pinned with <code>@v1</code>.</p>
+<h2 id="what-a-port-looks-like">What a port looks like<a class="headerlink" href="#what-a-port-looks-like" title="Permanent link">&para;</a></h2>
+<p>The whole MCU-specific part of an SPI driver, from <a href="https://github.com/kokeb-labs/driver-template"><code>driver-template</code></a>.
+Fill in the two bodies with your SDK's calls:</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">"xmpl100.hpp"</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">class</span><span class="w"> </span><span class="nc">MyPort</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">xmpl100</span><span class="o">::</span><span class="n">SpiInterface</span><span class="o">&lt;</span><span class="n">MyPort</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w"> </span><span class="k">public</span><span class="o">:</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">EnsureInitialized</span><span class="p">()</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span><span class="w">  </span><span class="c1">// bring the bus up on the first call; true at once afterwards</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">Transfer</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="n">tx</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="n">rx</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="w"> </span><span class="n">len</span><span class="p">)</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span><span class="w">  </span><span class="c1">// one transfer, CS held low</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">};</span>
+</span></code></pre></div>
+<p>Then use the driver the same way on every board:</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">xmpl100</span><span class="o">::</span><span class="n">XMPL100</span><span class="o">&lt;</span><span class="n">MyPort</span><span class="o">&gt;</span><span class="w"> </span><span class="n">sensor</span><span class="p">(</span><span class="n">port</span><span class="p">);</span><span class="w">   </span><span class="c1">// no I/O yet</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sensor</span><span class="p">.</span><span class="n">Initialize</span><span class="p">();</span><span class="w"> </span><span class="o">!</span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="c1">// bus up, reset, chip ID check</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">error</span><span class="p">);</span><span class="w">      </span><span class="c1">// Bus, Timeout or DeviceIdMismatch</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">}</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sensor</span><span class="p">.</span><span class="n">ReadTemperatureC</span><span class="p">();</span><span class="w">  </span><span class="c1">// t.value in degrees Celsius, or t.error</span>
+</span></code></pre></div>
 <figure class="kb-figure">
 <img src="diagrams/ecosystem.svg#only-light" alt="Layer diagram: your firmware calls kb-core, which calls brand-free chip drivers, which reach the hardware only through an MCU port; driver-template, espidf-tools and ci-tools start, build and check every repository." width="1200" height="913"><img src="diagrams/ecosystem.dark.svg#only-dark" alt="Layer diagram: your firmware calls kb-core, which calls brand-free chip drivers, which reach the hardware only through an MCU port; driver-template, espidf-tools and ci-tools start, build and check every repository." width="1200" height="913">
 <figcaption>From your firmware to the chip</figcaption>
@@ -768,36 +831,65 @@ Everything is MIT licensed.</p>
 <summary>Figure description and sources</summary>
 <p>Top to bottom, each arrow is a call. Your firmware calls the kb-core handlers, which call chip drivers (driver-<chip>), which reach the hardware only through an MCU port, yours or a ready one from kb-core; the port drives the chip on your board. Dashed cards are planned. On the right, the tools that every repository uses: driver-template starts a driver, espidf-tools builds and flashes ESP-IDF projects, ci-tools checks, documents and releases them all.</p>
 </details>
-<h2 id="start-here">Start here<a class="headerlink" href="#start-here" title="Permanent link">&para;</a></h2>
+<h2 id="available-today">Available today<a class="headerlink" href="#available-today" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Project</th>
+<th>What it does</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/kokeb-labs/driver-template"><code>driver-template</code></a></td>
+<td><code>python3 tools/setup.py</code> turns it into a new SPI, I2C or UART driver, or a library: code, host tests, an ESP32 example, docs and CI</td>
+<td><span class="kb-badge kb-badge--teal">Ready</span></td>
+</tr>
+<tr>
+<td><a href="https://kokeb-labs.github.io/espidf-tools/"><code>espidf-tools</code></a></td>
+<td>Build, flash and monitor every app of an ESP-IDF project across IDF versions and build types, from one <code>app_config.yml</code></td>
+<td><span class="kb-badge kb-badge--teal">v1</span></td>
+</tr>
+<tr>
+<td><a href="https://kokeb-labs.github.io/ci-tools/"><code>ci-tools</code></a></td>
+<td>Reusable GitHub Actions workflows and the documentation theme every repository uses</td>
+<td><span class="kb-badge kb-badge--teal">v1</span></td>
+</tr>
+<tr>
+<td>Chip drivers, <code>kb-core</code></td>
+<td>Drivers for real chips, and the shared interfaces, RTOS wrappers and handlers</td>
+<td><span class="kb-badge kb-badge--amber">Next</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="where-to-start">Where to start<a class="headerlink" href="#where-to-start" title="Permanent link">&para;</a></h2>
 <div class="grid cards">
 <ul>
 <li>
-<p><strong>Write a driver</strong></p>
+<p><strong>I want to write a driver</strong></p>
 <hr />
-<p>One command gives a new chip driver with code, host tests, an ESP32 example, documentation and CI.</p>
-<p><a href="https://github.com/kokeb-labs/driver-template">driver-template</a></p>
+<p>Create a repository from the template and run one command. Your first build and tests pass before you
+change a line.</p>
+<p><a href="https://github.com/kokeb-labs/driver-template/blob/main/docs/template.md">Using the template</a></p>
 </li>
 <li>
-<p><strong>Build ESP-IDF projects</strong></p>
+<p><strong>I build ESP-IDF firmware</strong></p>
 <hr />
-<p>Build, flash and monitor every app of a multi-app project from one <code>app_config.yml</code>, on your machine and
-in CI.</p>
-<p><a href="https://kokeb-labs.github.io/espidf-tools/">espidf-tools docs</a></p>
+<p>List your apps once in <code>app_config.yml</code>; build, flash and monitor any of them, and build them all in CI.</p>
+<p><a href="https://kokeb-labs.github.io/espidf-tools/latest/quickstart/">espidf-tools quickstart</a></p>
 </li>
 <li>
-<p><strong>Reuse our CI</strong></p>
+<p><strong>I want this CI in my repository</strong></p>
 <hr />
-<p>Reusable workflows for C++ checks, firmware builds, documentation sites and releases, pinned with <code>@v1</code>.</p>
-<p><a href="https://kokeb-labs.github.io/ci-tools/">ci-tools docs</a></p>
-</li>
-<li>
-<p><strong>Contribute</strong></p>
-<hr />
-<p>Sign off your commits, open a pull request, and CI tells you what is missing.</p>
-<p><a href="contributing/">Contributing</a></p>
+<p>A few short caller workflows give you C++ checks, firmware builds, a docs site and releases.</p>
+<p><a href="https://kokeb-labs.github.io/ci-tools/latest/quickstart/">ci-tools quickstart</a></p>
 </li>
 </ul>
 </div>
+<p><strong>Need a driver for a chip?</strong> <a href="https://github.com/kokeb-labs/.github/issues/new?template=driver-request.yml">Tell us which one</a>
+and what you use it for; requests decide what comes next.</p>
+<p><em>Kokeb (ኮከብ) means "star" in Amharic.</em></p>
 
 
 
