@@ -1,9 +1,9 @@
 ---
-# Site navigation (mkdocs-awesome-nav): the tabs and their pages, in reading order.
+# Site navigation (mkdocs-awesome-nav): the tabs and their pages, in reading order. The figure index
+# (diagrams/index.md) is linked from each figure, not from the tabs.
 nav:
   - Home: index.md
   - Projects: projects.md
   - How we build: principles.md
   - Roadmap: roadmap.md
   - Contributing: contributing.md
-  - Figures: diagrams/index.md
