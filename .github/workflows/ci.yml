@@ -27,6 +27,7 @@ jobs:
     with:
       versioning: false
       deploy: true
+      theme_ref: fonts-async
 
   yamllint:
     uses: kokeb-labs/ci-tools/.github/workflows/ru-yaml-lint.yml@v1
