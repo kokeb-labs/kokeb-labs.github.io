@@ -1,0 +1,9 @@
+---
+# Site navigation (mkdocs-awesome-nav): the tabs and their pages, in reading order.
+nav:
+  - Home: index.md
+  - Projects: projects.md
+  - How we build: principles.md
+  - Roadmap: roadmap.md
+  - Contributing: contributing.md
+  - Figures: diagrams/index.md

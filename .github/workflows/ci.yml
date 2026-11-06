@@ -1,0 +1,61 @@
+---
+# The portal: strict MkDocs build, figure drift check and link check on pull requests; on a push to main, publish
+# the site unversioned at https://kokeb-labs.github.io/. Also runs the DCO sign-off, the organisation-standard
+# checks and YAML lint, so the single CI gate covers them all.
+# Inputs: docs/ru-mkdocs-publish.md in kokeb-labs/ci-tools.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  docs:
+    uses: kokeb-labs/ci-tools/.github/workflows/ru-mkdocs-publish.yml@v1
+    permissions:
+      contents: write  # the publish job pushes gh-pages; pull requests never publish
+    with:
+      versioning: false
+      deploy: true
+
+  yamllint:
+    uses: kokeb-labs/ci-tools/.github/workflows/ru-yaml-lint.yml@v1
+    permissions:
+      contents: read
+    with:
+      paths: '.github/workflows/*.yml,**/*.yml,**/*.yaml'
+      config_file: '.yamllint'
+      strict_mode: true
+      exclude_patterns: '.git/**,site/**'
+
+  dco:
+    uses: kokeb-labs/ci-tools/.github/workflows/dco.yml@v1
+    permissions:
+      contents: read
+      pull-requests: read
+
+  org-standard:
+    uses: kokeb-labs/ci-tools/.github/workflows/org-standard-check.yml@v1
+    permissions:
+      contents: read
+
+  # Single required check: passes only if every job above passed
+  ci-gate:
+    name: CI gate
+    needs: [docs, yamllint, dco, org-standard]
+    if: always()
+    uses: kokeb-labs/ci-tools/.github/workflows/ru-ci-gate.yml@v1
+    permissions:
+      contents: read
+    with:
+      needs_json: ${{ toJSON(needs) }}
