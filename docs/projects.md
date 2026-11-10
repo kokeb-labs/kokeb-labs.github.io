@@ -57,7 +57,9 @@ settings of every repository kept as code.
 
 ## Coming next <span class="kb-badge kb-badge--amber">Next</span>
 
-- **Chip drivers**, one repository per chip, named `driver-<chip>`, moving in from HardFOC.
+- **Chip drivers**, one repository per chip, named `driver-<chip>`, moving in from HardFOC. They live in their own
+  organisation, [kokeb-labs-drivers](https://github.com/kokeb-labs-drivers); each has its docs site at
+  `https://kokeb-labs-drivers.github.io/driver-<chip>/`.
 - **kb-core**: MCU interfaces with ESP32, STM32 and host ports, a small RTOS layer, utilities, and the handlers that
   join drivers to the interfaces.
 
