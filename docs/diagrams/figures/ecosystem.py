@@ -2,8 +2,10 @@
 
 Reads: Top to bottom, each arrow is a call. Your firmware calls the kb-core handlers, which call chip drivers
 (driver-<chip>), which reach the hardware only through an MCU port, yours or a ready one from kb-core; the port drives
-the chip on your board. Dashed cards are planned. On the right, the tools that every repository uses: driver-template
-starts a driver, espidf-tools builds and flashes ESP-IDF projects, ci-tools checks, documents and releases them all.
+the chip on your board. Dashed cards are planned or early. At the top right, the open boards your firmware can run on,
+built around the drivers. Below them, the tools that every repository uses: driver-template starts a driver,
+board-template starts a board, espidf-tools builds and flashes ESP-IDF projects, ci-tools checks, documents and releases
+them all.
 """
 
 from kokeb_mkdocs_theme.figkit import Fig
@@ -14,8 +16,8 @@ def build(_data):
         "ecosystem",
         "From your firmware to the chip",
         alt="Layer diagram: your firmware calls kb-core, which calls brand-free chip drivers, which reach the "
-        "hardware only through an MCU port; driver-template, espidf-tools and ci-tools start, "
-        "build and check every repository.",
+        "hardware only through an MCU port; open boards built around the drivers are what firmware runs on; "
+        "driver-template, board-template, espidf-tools and ci-tools start, build and check every repository.",
         width=1200,
         kicker="Kokeb Labs",
         subtitle="Each arrow is a call. Everything above the port runs on any MCU and on a laptop.",
@@ -28,6 +30,9 @@ def build(_data):
     nx = M + gap
 
     fw = f.card(0, 0, M, "Your firmware", ["a product, a board or a test bench"], tone="teal", accent=True)
+    boards = f.card(nx, 0, side, "Open boards", ["KiCad boards built around the drivers; your firmware runs on them"],
+                    tone="brand", dashed=True, tag="early")
+    f.connect(fw, boards, "right", "left")
     core = f.card(0, fw.b + row, M, "kb-core", ["handlers, interfaces, RTOS wrappers, utilities"], tone="brand",
                   dashed=True, tag="planned")
     drv = f.card(0, core.b + row, M, "Chip drivers", ["driver-<chip>: one per chip, no SDK calls"], tone="brand",
@@ -44,6 +49,7 @@ def build(_data):
     ch = 92
     tools = [
         ("driver-template", ["starts a driver"]),
+        ("board-template", ["starts a board"]),
         ("espidf-tools", ["builds and flashes"]),
         ("ci-tools", ["checks, documents, releases"]),
     ]
