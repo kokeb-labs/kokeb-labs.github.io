@@ -92,7 +92,7 @@ const auto t = sensor.ReadTemperatureC();  // t.value in degrees Celsius, or t.e
 | [`driver-template`](https://github.com/kokeb-labs/driver-template) | `python3 tools/setup.py` turns it into a new SPI, I2C or UART driver, or a library: code, host tests, an ESP32 example, docs and CI | <span class="kb-badge kb-badge--teal">Ready</span> |
 | [`espidf-tools`](https://kokeb-labs.github.io/espidf-tools/) | Build, flash and monitor every app of an ESP-IDF project across IDF versions and build types, from one `app_config.yml` | <span class="kb-badge kb-badge--teal">v1</span> |
 | [`ci-tools`](https://kokeb-labs.github.io/ci-tools/) | Reusable GitHub Actions workflows and the documentation theme every repository uses | <span class="kb-badge kb-badge--teal">v1</span> |
-| Chip drivers, `kb-core` | Drivers for real chips, and the shared interfaces, RTOS wrappers and handlers | <span class="kb-badge kb-badge--amber">Next</span> |
+| Chip drivers, `kb-core` | Drivers for real chips, in [kokeb-labs-drivers](https://github.com/kokeb-labs-drivers), and the shared interfaces, RTOS wrappers and handlers | <span class="kb-badge kb-badge--amber">Next</span> |
 
 ## Where to start
 

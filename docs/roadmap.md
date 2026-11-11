@@ -11,7 +11,7 @@ description: What Kokeb Labs is building, in order, and how to follow along.
    platform and this site.
 2. **Chip drivers** <span class="kb-badge kb-badge--amber">Next</span>
    Drivers move in from HardFOC one chip at a time, renamed `driver-<chip>`, each with host tests, an ESP32 example
-   and a docs site.
+   and a docs site, in the [kokeb-labs-drivers](https://github.com/kokeb-labs-drivers) organisation.
 3. **kb-core**
    One repository with `kb::utils`, `kb::rtos`, `kb::interfaces` and `kb::handlers`. Pick your MCU, RTOS and drivers
    in one CMake file; only what you pick is built.

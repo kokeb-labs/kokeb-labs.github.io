@@ -3,6 +3,11 @@
 All notable changes to the portal are written here. The site is not versioned; this log records what changed and
 when.
 
+## 2026-11-10
+
+- The chip drivers live in the [kokeb-labs-drivers](https://github.com/kokeb-labs-drivers) organisation; the
+  home, projects and roadmap pages say so and link it.
+
 ## 2026-11-06
 
 - Rewrote every page around concrete facts: why the drivers are different, a real port and driver example, what
