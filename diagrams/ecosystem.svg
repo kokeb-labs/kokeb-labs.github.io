@@ -1,19 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="913" viewBox="0 0 1200 913" role="img" aria-labelledby="ecosystem-title ecosystem-desc" font-family="Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
 <title id="ecosystem-title">From your firmware to the chip</title>
-<desc id="ecosystem-desc">Layer diagram: your firmware calls kb-core, which calls brand-free chip drivers, which reach the hardware only through an MCU port; driver-template, espidf-tools and ci-tools start, build and check every repository.</desc>
+<desc id="ecosystem-desc">Layer diagram: your firmware calls kb-core, which calls brand-free chip drivers, which reach the hardware only through an MCU port; open boards built around the drivers are what firmware runs on; driver-template, board-template, espidf-tools and ci-tools start, build and check every repository.</desc>
 <defs><marker id="fk-arrow-rail" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#8893A2"/></marker></defs>
 <rect x="0.5" y="0.5" width="1199" height="912" rx="16" fill="#FFFFFF" stroke="#E2E7EE"/>
 <text x="32" y="46.8" font-size="16" font-weight="700" letter-spacing="1.2" fill="#7A360E">KOKEB LABS</text>
 <text x="32" y="85.6" font-size="32" font-weight="700" fill="#0E1726">From your firmware to the chip</text>
 <text x="32" y="115.4" font-size="18" fill="#566070">Each arrow is a call. Everything above the port runs on any MCU and on a laptop.</text>
 <rect x="32" y="131.4" width="1136" height="1" fill="#E2E7EE"/>
-<rect x="838" y="302.4" width="330" height="371" rx="16" fill="#FBEFE6" stroke="#E9C3A6" stroke-width="1.2"/>
+<rect x="838" y="302.4" width="330" height="479" rx="16" fill="#FBEFE6" stroke="#E9C3A6" stroke-width="1.2"/>
+<path d="M794 193.9 L806 193.9 Q814 193.9 814 201.9 L814 210.4 Q814 218.4 822 218.4 L834 218.4" fill="none" stroke="#8893A2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fk-arrow-rail)"/>
 <path d="M411 242.4 L411 298.4" fill="none" stroke="#8893A2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fk-arrow-rail)"/>
 <path d="M411 395.4 L411 451.4" fill="none" stroke="#8893A2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fk-arrow-rail)"/>
 <path d="M411 548.4 L411 604.4" fill="none" stroke="#8893A2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fk-arrow-rail)"/>
 <path d="M411 701.4 L411 757.4" fill="none" stroke="#8893A2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fk-arrow-rail)"/>
 <rect x="32" y="149.4" width="758" height="89" rx="12" fill="#E6F6F4" stroke="#0B7A72" stroke-width="1.4"/>
 <rect x="32" y="157.4" width="4" height="73" rx="2" fill="#0B7A72"/>
+<rect x="838" y="149.4" width="330" height="138" rx="12" fill="#FFFFFF" stroke="#C9D1DB" stroke-width="1" stroke-dasharray="6 4"/>
 <rect x="32" y="302.4" width="758" height="89" rx="12" fill="#FFFFFF" stroke="#C9D1DB" stroke-width="1" stroke-dasharray="6 4"/>
 <rect x="32" y="455.4" width="758" height="89" rx="12" fill="#FFFFFF" stroke="#C9D1DB" stroke-width="1" stroke-dasharray="6 4"/>
 <rect x="32" y="608.4" width="758" height="89" rx="12" fill="#E6F6F4" stroke="#0B7A72" stroke-width="1.4"/>
@@ -26,8 +28,16 @@
 <rect x="854" y="463.4" width="4" height="76" rx="2" fill="#9A4A17"/>
 <rect x="854" y="563.4" width="298" height="92" rx="12" fill="#FBEFE6" stroke="#9A4A17" stroke-width="1.4"/>
 <rect x="854" y="571.4" width="4" height="76" rx="2" fill="#9A4A17"/>
+<rect x="854" y="671.4" width="298" height="92" rx="12" fill="#FBEFE6" stroke="#9A4A17" stroke-width="1.4"/>
+<rect x="854" y="679.4" width="4" height="76" rx="2" fill="#9A4A17"/>
 <text x="56" y="184.4" font-size="20" font-weight="700" fill="#0B5F59">Your firmware</text>
 <text x="56" y="215" font-size="17" fill="#2B3442">a product, a board or a test bench</text>
+<text x="862" y="184.4" font-size="20" font-weight="700" fill="#0E1726">Open boards</text>
+<text x="862" y="215" font-size="17" fill="#2B3442">KiCad boards built around the</text>
+<text x="862" y="239.7" font-size="17" fill="#2B3442">drivers; your firmware runs on</text>
+<text x="862" y="264.4" font-size="17" fill="#2B3442">them</text>
+<rect x="1096.3" y="163.4" width="57.7" height="26" rx="13" fill="#FBEFE6" stroke="#E9C3A6" stroke-width="1"/>
+<text x="1104.3" y="181.5" font-size="16" font-weight="700" fill="#7A360E">early</text>
 <text x="56" y="337.4" font-size="20" font-weight="700" fill="#0E1726">kb-core</text>
 <text x="56" y="368" font-size="17" fill="#2B3442">handlers, interfaces, RTOS wrappers, utilities</text>
 <rect x="693" y="316.4" width="83" height="26" rx="13" fill="#FBEFE6" stroke="#E9C3A6" stroke-width="1"/>
@@ -50,10 +60,12 @@
 <text x="411" y="735.2" font-size="16" font-weight="500" text-anchor="middle" fill="#566070">bus transfers</text>
 <text x="878" y="382.4" font-size="20" font-weight="700" fill="#7A360E">driver-template</text>
 <text x="878" y="413" font-size="17" fill="#2B3442">starts a driver</text>
-<text x="878" y="490.4" font-size="20" font-weight="700" fill="#7A360E">espidf-tools</text>
-<text x="878" y="521" font-size="17" fill="#2B3442">builds and flashes</text>
-<text x="878" y="598.4" font-size="20" font-weight="700" fill="#7A360E">ci-tools</text>
-<text x="878" y="629" font-size="17" fill="#2B3442">checks, documents, releases</text>
+<text x="878" y="490.4" font-size="20" font-weight="700" fill="#7A360E">board-template</text>
+<text x="878" y="521" font-size="17" fill="#2B3442">starts a board</text>
+<text x="878" y="598.4" font-size="20" font-weight="700" fill="#7A360E">espidf-tools</text>
+<text x="878" y="629" font-size="17" fill="#2B3442">builds and flashes</text>
+<text x="878" y="706.4" font-size="20" font-weight="700" fill="#7A360E">ci-tools</text>
+<text x="878" y="737" font-size="17" fill="#2B3442">checks, documents, releases</text>
 <text x="854" y="331.4" font-size="17" font-weight="700" fill="#7A360E">TOOLS FOR EVERY REPO</text>
 <rect x="32" y="862.8" width="14" height="14" rx="4" fill="#E6F6F4" stroke="#0B7A72" stroke-width="1.4"/>
 <text x="54" y="877.4" font-size="16" fill="#566070">yours</text>

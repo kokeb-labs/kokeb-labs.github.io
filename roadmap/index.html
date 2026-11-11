@@ -708,6 +708,11 @@
 <li><strong>Chip drivers</strong> <span class="kb-badge kb-badge--amber">Next</span>
    Drivers move in from HardFOC one chip at a time, renamed <code>driver-&lt;chip&gt;</code>, each with host tests, an ESP32 example
    and a docs site, in the <a href="https://github.com/kokeb-labs-drivers">kokeb-labs-drivers</a> organisation.</li>
+<li><strong>Open boards</strong> <span class="kb-badge kb-badge--amber">Started</span>
+   Open KiCad boards built around the drivers, in the
+   <a href="https://github.com/kokeb-labs-open-boards">kokeb-labs-open-boards</a> organisation, each traced from its needs to its
+   test results. <code>board-template</code>, the parts library and the circuit-block library exist; the first board, a BMP581
+   breakout, is at concept stage.</li>
 <li><strong>kb-core</strong>
    One repository with <code>kb::utils</code>, <code>kb::rtos</code>, <code>kb::interfaces</code> and <code>kb::handlers</code>. Pick your MCU, RTOS and drivers
    in one CMake file; only what you pick is built.</li>

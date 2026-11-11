@@ -549,6 +549,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#board-template-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        board-template Started
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#espidf-tools-v1" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -730,6 +741,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#board-template-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        board-template Started
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#espidf-tools-v1" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -824,6 +846,20 @@ and one required check, <code>CI gate</code>.</p>
 </ul>
 <p><a class="md-button md-button--primary" href="https://github.com/kokeb-labs/driver-template">Repository</a>
 <a class="md-button" href="https://github.com/kokeb-labs/driver-template/blob/main/docs/template.md">Using the template</a></p>
+<h2 id="board-template-started">board-template <span class="kb-badge kb-badge--amber">Started</span><a class="headerlink" href="#board-template-started" title="Permanent link">&para;</a></h2>
+<p><strong>Start a new board in one command.</strong> Create a repository from the template, run <code>python3 tools/setup.py</code>, and you
+get:</p>
+<ul>
+<li>A board record (<code>board.yml</code>) with the status, the revision, the intended use and the drivers the board is built
+  around.</li>
+<li>A requirements trace: needs, requirements, risks and verifications as data, linked by the version of what they
+  derive from, so a change to a need or a chip flags everything that depends on it.</li>
+<li>A check that fails CI on broken or suspect links, unverified requirements and missing evidence, with its tests.</li>
+<li>Folders and rules for the KiCad project, the enclosure, the firmware, the manufacturing package and the test
+  results, and the outline of the evidence pack a release carries.</li>
+</ul>
+<p>Boards made from it live in <a href="https://github.com/kokeb-labs-open-boards">kokeb-labs-open-boards</a>.</p>
+<p><a class="md-button md-button--primary" href="https://github.com/kokeb-labs/board-template">Repository</a></p>
 <h2 id="espidf-tools-v1">espidf-tools <span class="kb-badge kb-badge--teal">v1</span><a class="headerlink" href="#espidf-tools-v1" title="Permanent link">&para;</a></h2>
 <p><strong>Build, flash and monitor every app of a multi-app ESP-IDF project.</strong> List the apps, ESP-IDF versions, build types
 and target once in <code>app_config.yml</code>; the same scripts run on your machine and in CI.</p>
@@ -861,8 +897,10 @@ settings of every repository kept as code.</p>
 </ul>
 <p>See the <a href="../roadmap/">roadmap</a> for the order, or <a href="https://github.com/kokeb-labs/.github/issues/new?template=driver-request.yml">request a driver</a>.</p>
 <h2 id="boards">Boards<a class="headerlink" href="#boards" title="Permanent link">&para;</a></h2>
-<p><a href="https://github.com/hardfoc">HardFOC</a> is a family of motor-control boards built on these drivers and tools. It keeps
-its own organisation; Kokeb Labs holds the parts that work on any board.</p>
+<p>The open boards, the KiCad parts library and the circuit blocks they share live in
+<a href="https://github.com/kokeb-labs-open-boards">kokeb-labs-open-boards</a>; each board is built around the drivers and
+traced from its needs to its test results. <a href="https://github.com/hardfoc">HardFOC</a> is a family of motor-control boards
+built on these drivers and tools. It keeps its own organisation; Kokeb Labs holds the parts that work on any board.</p>
 
 
 

@@ -643,15 +643,15 @@ not redrawn, when the code changes. CI runs <code>kokeb-docs figures --check</co
 committed figure no longer matches the code. Each figure below lists the files it is drawn from.</p>
 <h2 id="from-your-firmware-to-the-chip">From your firmware to the chip<a class="headerlink" href="#from-your-firmware-to-the-chip" title="Permanent link">&para;</a></h2>
 <figure class="kb-figure">
-<img src="ecosystem.svg#only-light" alt="Layer diagram: your firmware calls kb-core, which calls brand-free chip drivers, which reach the hardware only through an MCU port; driver-template, espidf-tools and ci-tools start, build and check every repository." width="1200" height="913"><img src="ecosystem.dark.svg#only-dark" alt="Layer diagram: your firmware calls kb-core, which calls brand-free chip drivers, which reach the hardware only through an MCU port; driver-template, espidf-tools and ci-tools start, build and check every repository." width="1200" height="913">
+<img src="ecosystem.svg#only-light" alt="Layer diagram: your firmware calls kb-core, which calls brand-free chip drivers, which reach the hardware only through an MCU port; open boards built around the drivers are what firmware runs on; driver-template, board-template, espidf-tools and ci-tools start, build and check every repository." width="1200" height="913"><img src="ecosystem.dark.svg#only-dark" alt="Layer diagram: your firmware calls kb-core, which calls brand-free chip drivers, which reach the hardware only through an MCU port; open boards built around the drivers are what firmware runs on; driver-template, board-template, espidf-tools and ci-tools start, build and check every repository." width="1200" height="913">
 <figcaption>From your firmware to the chip</figcaption>
 </figure>
 
 <details class="kb-figure-desc">
 <summary>Figure description and sources</summary>
-<p>Top to bottom, each arrow is a call. Your firmware calls the kb-core handlers, which call chip drivers (driver-<chip>), which reach the hardware only through an MCU port, yours or a ready one from kb-core; the port drives the chip on your board. Dashed cards are planned. On the right, the tools that every repository uses: driver-template starts a driver, espidf-tools builds and flashes ESP-IDF projects, ci-tools checks, documents and releases them all.</p>
+<p>Top to bottom, each arrow is a call. Your firmware calls the kb-core handlers, which call chip drivers (driver-<chip>), which reach the hardware only through an MCU port, yours or a ready one from kb-core; the port drives the chip on your board. Dashed cards are planned or early. At the top right, the open boards your firmware can run on, built around the drivers. Below them, the tools that every repository uses: driver-template starts a driver, board-template starts a board, espidf-tools builds and flashes ESP-IDF projects, ci-tools checks, documents and releases them all.</p>
 </details>
-<p>Figure module: <a href="https://github.com/kokeb-labs/kokeb-labs.github.io/blob/1b255c668c491152854c2dcc2b704331ce22f1d5/docs/diagrams/figures/ecosystem.py"><code>docs/diagrams/figures/ecosystem.py</code></a></p>
+<p>Figure module: <a href="https://github.com/kokeb-labs/kokeb-labs.github.io/blob/7003b3343b3d1763009b75296cf574e831e4e391/docs/diagrams/figures/ecosystem.py"><code>docs/diagrams/figures/ecosystem.py</code></a></p>
 
 
 
