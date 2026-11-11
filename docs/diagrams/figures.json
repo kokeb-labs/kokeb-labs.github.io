@@ -1,8 +1,8 @@
 {
   "ecosystem": {
     "title": "From your firmware to the chip",
-    "alt": "Layer diagram: your firmware calls kb-core, which calls brand-free chip drivers, which reach the hardware only through an MCU port; driver-template, espidf-tools and ci-tools start, build and check every repository.",
-    "description": "Top to bottom, each arrow is a call. Your firmware calls the kb-core handlers, which call chip drivers (driver-<chip>), which reach the hardware only through an MCU port, yours or a ready one from kb-core; the port drives the chip on your board. Dashed cards are planned. On the right, the tools that every repository uses: driver-template starts a driver, espidf-tools builds and flashes ESP-IDF projects, ci-tools checks, documents and releases them all.",
+    "alt": "Layer diagram: your firmware calls kb-core, which calls brand-free chip drivers, which reach the hardware only through an MCU port; open boards built around the drivers are what firmware runs on; driver-template, board-template, espidf-tools and ci-tools start, build and check every repository.",
+    "description": "Top to bottom, each arrow is a call. Your firmware calls the kb-core handlers, which call chip drivers (driver-<chip>), which reach the hardware only through an MCU port, yours or a ready one from kb-core; the port drives the chip on your board. Dashed cards are planned or early. At the top right, the open boards your firmware can run on, built around the drivers. Below them, the tools that every repository uses: driver-template starts a driver, board-template starts a board, espidf-tools builds and flashes ESP-IDF projects, ci-tools checks, documents and releases them all.",
     "profile": "overview",
     "width": 1200,
     "source": "docs/diagrams/figures/ecosystem.py",

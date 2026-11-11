@@ -80,8 +80,8 @@ const auto t = sensor.ReadTemperatureC();  // t.value in degrees Celsius, or t.e
   <source media="(prefers-color-scheme: dark)" srcset="diagrams/ecosystem.dark.svg">
   <img src="diagrams/ecosystem.svg"
     alt="Layer diagram: your firmware calls kb-core, which calls brand-free chip drivers, which reach the
-    hardware only through an MCU port; driver-template, espidf-tools and ci-tools start, build and check
-    every repository.">
+    hardware only through an MCU port; open boards built around the drivers are what firmware runs on;
+    driver-template, board-template, espidf-tools and ci-tools start, build and check every repository.">
 </picture>
 <!-- /figure -->
 
