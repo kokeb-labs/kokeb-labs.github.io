@@ -21,6 +21,23 @@ and one required check, `CI gate`.
 [Repository](https://github.com/kokeb-labs/driver-template){ .md-button .md-button--primary }
 [Using the template](https://github.com/kokeb-labs/driver-template/blob/main/docs/template.md){ .md-button }
 
+## board-template <span class="kb-badge kb-badge--amber">Started</span>
+
+**Start a new board in one command.** Create a repository from the template, run `python3 tools/setup.py`, and you
+get:
+
+- A board record (`board.yml`) with the status, the revision, the intended use and the drivers the board is built
+  around.
+- A requirements trace: needs, requirements, risks and verifications as data, linked by the version of what they
+  derive from, so a change to a need or a chip flags everything that depends on it.
+- A check that fails CI on broken or suspect links, unverified requirements and missing evidence, with its tests.
+- Folders and rules for the KiCad project, the enclosure, the firmware, the manufacturing package and the test
+  results, and the outline of the evidence pack a release carries.
+
+Boards made from it live in [kokeb-labs-open-boards](https://github.com/kokeb-labs-open-boards).
+
+[Repository](https://github.com/kokeb-labs/board-template){ .md-button .md-button--primary }
+
 ## espidf-tools <span class="kb-badge kb-badge--teal">v1</span>
 
 **Build, flash and monitor every app of a multi-app ESP-IDF project.** List the apps, ESP-IDF versions, build types
@@ -67,5 +84,7 @@ See the [roadmap](roadmap.md) for the order, or [request a driver](https://githu
 
 ## Boards
 
-[HardFOC](https://github.com/hardfoc) is a family of motor-control boards built on these drivers and tools. It keeps
-its own organisation; Kokeb Labs holds the parts that work on any board.
+The open boards, the KiCad parts library and the circuit blocks they share live in
+[kokeb-labs-open-boards](https://github.com/kokeb-labs-open-boards); each board is built around the drivers and
+traced from its needs to its test results. [HardFOC](https://github.com/hardfoc) is a family of motor-control boards
+built on these drivers and tools. It keeps its own organisation; Kokeb Labs holds the parts that work on any board.

@@ -12,14 +12,19 @@ description: What Kokeb Labs is building, in order, and how to follow along.
 2. **Chip drivers** <span class="kb-badge kb-badge--amber">Next</span>
    Drivers move in from HardFOC one chip at a time, renamed `driver-<chip>`, each with host tests, an ESP32 example
    and a docs site, in the [kokeb-labs-drivers](https://github.com/kokeb-labs-drivers) organisation.
-3. **kb-core**
+3. **Open boards** <span class="kb-badge kb-badge--amber">Started</span>
+   Open KiCad boards built around the drivers, in the
+   [kokeb-labs-open-boards](https://github.com/kokeb-labs-open-boards) organisation, each traced from its needs to its
+   test results. `board-template`, the parts library and the circuit-block library exist; the first board, a BMP581
+   breakout, is at concept stage.
+4. **kb-core**
    One repository with `kb::utils`, `kb::rtos`, `kb::interfaces` and `kb::handlers`. Pick your MCU, RTOS and drivers
    in one CMake file; only what you pick is built.
-4. **MCU ports**
+5. **MCU ports**
    Ready-made ports under `interfaces/mcu/<family>/`, starting with ESP32, then STM32 and the host.
-5. **HardFOC on Kokeb**
+6. **HardFOC on Kokeb**
    The HardFOC motor-control boards build on these drivers and kb-core.
-6. **Tools for users**
+7. **Tools for users**
    A command-line tool, a board configurator and a documentation hub.
 
 </div>
