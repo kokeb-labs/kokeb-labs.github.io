@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="919" height="805" viewBox="0 0 919 805" role="img" aria-labelledby="assurance-levels-title assurance-levels-desc" font-family="Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title id="assurance-levels-title">What each assurance level asks for</title>
+<desc id="assurance-levels-desc">Matrix of the checks and evidence asked for at the standard, high and safety assurance levels, from lint and host tests for every repository to a signed evidence package at safety.</desc>
+<rect x="0.5" y="0.5" width="918" height="804" rx="16" fill="#0E131A" stroke="#283241"/>
+<text x="32" y="44" font-size="12.5" font-weight="700" letter-spacing="1.2" fill="#F8D27A">KOKEB LABS</text>
+<text x="32" y="77.3" font-size="26" font-weight="700" fill="#E8EDF3">What each assurance level asks for</text>
+<text x="32" y="103.8" font-size="15" fill="#9AA6B5">Each level includes everything below it. Drivers are built at high; safety is chosen per component.</text>
+<rect x="32" y="119.8" width="855" height="1" fill="#252F3C"/>
+<rect x="498.1" y="180.8" width="122" height="54" rx="10" fill="#11281A" stroke="#4ADE80" stroke-width="1.4"/>
+<path d="M512.9 207.8 L516.9 212.8 L525.9 201.8" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="626.1" y="180.8" width="122" height="54" rx="10" fill="#11281A" stroke="#4ADE80" stroke-width="1.4"/>
+<path d="M640.9 207.8 L644.9 212.8 L653.9 201.8" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="754.1" y="180.8" width="122" height="54" rx="10" fill="#11281A" stroke="#4ADE80" stroke-width="1.4"/>
+<path d="M768.9 207.8 L772.9 212.8 L781.9 201.8" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="498.1" y="240.8" width="122" height="54" rx="10" fill="#1B232E" stroke="#94A3B8" stroke-width="1.4"/>
+<path d="M500.3 267.8 L512.3 267.8" fill="none" stroke="#94A3B8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="626.1" y="240.8" width="122" height="54" rx="10" fill="#11281A" stroke="#4ADE80" stroke-width="1.4"/>
+<path d="M640.9 267.8 L644.9 272.8 L653.9 261.8" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="754.1" y="240.8" width="122" height="54" rx="10" fill="#11281A" stroke="#4ADE80" stroke-width="1.4"/>
+<path d="M768.9 267.8 L772.9 272.8 L781.9 261.8" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="498.1" y="300.8" width="122" height="54" rx="10" fill="#1B232E" stroke="#94A3B8" stroke-width="1.4"/>
+<path d="M500.3 327.8 L512.3 327.8" fill="none" stroke="#94A3B8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="626.1" y="300.8" width="122" height="54" rx="10" fill="#11281A" stroke="#4ADE80" stroke-width="1.4"/>
+<path d="M640.9 324.8 L644.9 329.8 L653.9 318.8" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="754.1" y="300.8" width="122" height="54" rx="10" fill="#11281A" stroke="#4ADE80" stroke-width="1.4"/>
+<path d="M768.9 324.8 L772.9 329.8 L781.9 318.8" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="498.1" y="360.8" width="122" height="54" rx="10" fill="#1B232E" stroke="#94A3B8" stroke-width="1.4"/>
+<path d="M500.3 387.8 L512.3 387.8" fill="none" stroke="#94A3B8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="626.1" y="360.8" width="122" height="54" rx="10" fill="#11281A" stroke="#4ADE80" stroke-width="1.4"/>
+<path d="M640.9 387.8 L644.9 392.8 L653.9 381.8" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="754.1" y="360.8" width="122" height="54" rx="10" fill="#11281A" stroke="#4ADE80" stroke-width="1.4"/>
+<path d="M768.9 387.8 L772.9 392.8 L781.9 381.8" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="498.1" y="420.8" width="122" height="54" rx="10" fill="#1B232E" stroke="#94A3B8" stroke-width="1.4"/>
+<path d="M500.3 447.8 L512.3 447.8" fill="none" stroke="#94A3B8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="626.1" y="420.8" width="122" height="54" rx="10" fill="#11281A" stroke="#4ADE80" stroke-width="1.4"/>
+<path d="M640.9 447.8 L644.9 452.8 L653.9 441.8" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="754.1" y="420.8" width="122" height="54" rx="10" fill="#11281A" stroke="#4ADE80" stroke-width="1.4"/>
+<path d="M768.9 447.8 L772.9 452.8 L781.9 441.8" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="498.1" y="480.8" width="122" height="54" rx="10" fill="#1B232E" stroke="#94A3B8" stroke-width="1.4"/>
+<path d="M500.3 507.8 L512.3 507.8" fill="none" stroke="#94A3B8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="626.1" y="480.8" width="122" height="54" rx="10" fill="#11281A" stroke="#4ADE80" stroke-width="1.4"/>
+<path d="M640.9 507.8 L644.9 512.8 L653.9 501.8" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="754.1" y="480.8" width="122" height="54" rx="10" fill="#11281A" stroke="#4ADE80" stroke-width="1.4"/>
+<path d="M768.9 507.8 L772.9 512.8 L781.9 501.8" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="498.1" y="540.8" width="122" height="54" rx="10" fill="#1B232E" stroke="#94A3B8" stroke-width="1.4"/>
+<path d="M500.3 567.8 L512.3 567.8" fill="none" stroke="#94A3B8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="626.1" y="540.8" width="122" height="54" rx="10" fill="#2C2310" stroke="#FBBF24" stroke-width="1.4"/>
+<path d="M641.8 560.8 L641.8 569.8" fill="none" stroke="#FBBF24" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="641.8" cy="573.8" r="1.6" fill="#FBBF24"/>
+<rect x="754.1" y="540.8" width="122" height="54" rx="10" fill="#11281A" stroke="#4ADE80" stroke-width="1.4"/>
+<path d="M768.9 564.8 L772.9 569.8 L781.9 558.8" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="498.1" y="600.8" width="122" height="54" rx="10" fill="#1B232E" stroke="#94A3B8" stroke-width="1.4"/>
+<path d="M500.3 627.8 L512.3 627.8" fill="none" stroke="#94A3B8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="626.1" y="600.8" width="122" height="54" rx="10" fill="#1B232E" stroke="#94A3B8" stroke-width="1.4"/>
+<path d="M628.3 627.8 L640.3 627.8" fill="none" stroke="#94A3B8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="754.1" y="600.8" width="122" height="54" rx="10" fill="#11281A" stroke="#4ADE80" stroke-width="1.4"/>
+<path d="M768.9 627.8 L772.9 632.8 L781.9 621.8" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="498.1" y="660.8" width="122" height="54" rx="10" fill="#1B232E" stroke="#94A3B8" stroke-width="1.4"/>
+<path d="M500.3 687.8 L512.3 687.8" fill="none" stroke="#94A3B8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="626.1" y="660.8" width="122" height="54" rx="10" fill="#1B232E" stroke="#94A3B8" stroke-width="1.4"/>
+<path d="M628.3 687.8 L640.3 687.8" fill="none" stroke="#94A3B8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="754.1" y="660.8" width="122" height="54" rx="10" fill="#11281A" stroke="#4ADE80" stroke-width="1.4"/>
+<path d="M768.9 687.8 L772.9 692.8 L781.9 681.8" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="498.1" y="720.8" width="122" height="54" rx="10" fill="#1B232E" stroke="#94A3B8" stroke-width="1.4"/>
+<path d="M500.3 747.8 L512.3 747.8" fill="none" stroke="#94A3B8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="626.1" y="720.8" width="122" height="54" rx="10" fill="#1B232E" stroke="#94A3B8" stroke-width="1.4"/>
+<path d="M628.3 747.8 L640.3 747.8" fill="none" stroke="#94A3B8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="754.1" y="720.8" width="122" height="54" rx="10" fill="#11281A" stroke="#4ADE80" stroke-width="1.4"/>
+<path d="M768.9 747.8 L772.9 752.8 L781.9 741.8" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="559.1" y="165.8" font-size="13" font-weight="700" text-anchor="middle" fill="#E8EDF3">Standard</text>
+<text x="687.1" y="165.8" font-size="13" font-weight="700" text-anchor="middle" fill="#E8EDF3">High</text>
+<text x="815.1" y="165.8" font-size="13" font-weight="700" text-anchor="middle" fill="#E8EDF3">Safety</text>
+<text x="43.9" y="212.8" font-size="13" font-weight="700" fill="#E8EDF3">Format, lint, static analysis, host tests, docs build, DCO, CI gate</text>
+<text x="569.1" y="212.8" font-size="13" font-weight="600" text-anchor="middle" fill="#BBF7D0">required</text>
+<text x="697.1" y="212.8" font-size="13" font-weight="600" text-anchor="middle" fill="#BBF7D0">required</text>
+<text x="825.1" y="212.8" font-size="13" font-weight="600" text-anchor="middle" fill="#BBF7D0">required</text>
+<text x="43.9" y="272.8" font-size="13" font-weight="700" fill="#E8EDF3">Sanitizers</text>
+<text x="569.1" y="272.8" font-size="13" font-weight="600" text-anchor="middle" fill="#E2E8F0">not required</text>
+<text x="697.1" y="272.8" font-size="13" font-weight="600" text-anchor="middle" fill="#BBF7D0">required</text>
+<text x="825.1" y="272.8" font-size="13" font-weight="600" text-anchor="middle" fill="#BBF7D0">required</text>
+<text x="43.9" y="332.8" font-size="13" font-weight="700" fill="#E8EDF3">Coverage floor, lines and branches</text>
+<text x="569.1" y="332.8" font-size="13" font-weight="600" text-anchor="middle" fill="#E2E8F0">not required</text>
+<text x="697.1" y="329.8" font-size="13" font-weight="600" text-anchor="middle" fill="#BBF7D0">required</text>
+<text x="687.1" y="348.8" font-size="12" text-anchor="middle" fill="#BBF7D0">85 % / 75 %</text>
+<text x="825.1" y="329.8" font-size="13" font-weight="600" text-anchor="middle" fill="#BBF7D0">required</text>
+<text x="815.1" y="348.8" font-size="12" text-anchor="middle" fill="#BBF7D0">all branches</text>
+<text x="43.9" y="392.8" font-size="13" font-weight="700" fill="#E8EDF3">Builds for every supported target</text>
+<text x="569.1" y="392.8" font-size="13" font-weight="600" text-anchor="middle" fill="#E2E8F0">not required</text>
+<text x="697.1" y="392.8" font-size="13" font-weight="600" text-anchor="middle" fill="#BBF7D0">required</text>
+<text x="825.1" y="392.8" font-size="13" font-weight="600" text-anchor="middle" fill="#BBF7D0">required</text>
+<text x="43.9" y="452.8" font-size="13" font-weight="700" fill="#E8EDF3">Warning-free Doxygen on the public API</text>
+<text x="569.1" y="452.8" font-size="13" font-weight="600" text-anchor="middle" fill="#E2E8F0">not required</text>
+<text x="697.1" y="452.8" font-size="13" font-weight="600" text-anchor="middle" fill="#BBF7D0">required</text>
+<text x="825.1" y="452.8" font-size="13" font-weight="600" text-anchor="middle" fill="#BBF7D0">required</text>
+<text x="43.9" y="512.8" font-size="13" font-weight="700" fill="#E8EDF3">Deviation record for every suppressed finding</text>
+<text x="569.1" y="512.8" font-size="13" font-weight="600" text-anchor="middle" fill="#E2E8F0">not required</text>
+<text x="697.1" y="512.8" font-size="13" font-weight="600" text-anchor="middle" fill="#BBF7D0">required</text>
+<text x="825.1" y="512.8" font-size="13" font-weight="600" text-anchor="middle" fill="#BBF7D0">required</text>
+<text x="43.9" y="572.8" font-size="13" font-weight="700" fill="#E8EDF3">MC/DC coverage</text>
+<text x="569.1" y="572.8" font-size="13" font-weight="600" text-anchor="middle" fill="#E2E8F0">not required</text>
+<text x="697.1" y="572.8" font-size="13" font-weight="600" text-anchor="middle" fill="#FDE68A">measured</text>
+<text x="825.1" y="569.8" font-size="13" font-weight="600" text-anchor="middle" fill="#BBF7D0">required</text>
+<text x="815.1" y="588.8" font-size="12" text-anchor="middle" fill="#BBF7D0">100 %</text>
+<text x="43.9" y="632.8" font-size="13" font-weight="700" fill="#E8EDF3">Requirements traced to code and tests</text>
+<text x="569.1" y="632.8" font-size="13" font-weight="600" text-anchor="middle" fill="#E2E8F0">not required</text>
+<text x="697.1" y="632.8" font-size="13" font-weight="600" text-anchor="middle" fill="#E2E8F0">not required</text>
+<text x="825.1" y="632.8" font-size="13" font-weight="600" text-anchor="middle" fill="#BBF7D0">required</text>
+<text x="43.9" y="692.8" font-size="13" font-weight="700" fill="#E8EDF3">Coding-standard matrix with a commercial MISRA checker</text>
+<text x="569.1" y="692.8" font-size="13" font-weight="600" text-anchor="middle" fill="#E2E8F0">not required</text>
+<text x="697.1" y="692.8" font-size="13" font-weight="600" text-anchor="middle" fill="#E2E8F0">not required</text>
+<text x="825.1" y="692.8" font-size="13" font-weight="600" text-anchor="middle" fill="#BBF7D0">required</text>
+<text x="43.9" y="752.8" font-size="13" font-weight="700" fill="#E8EDF3">Anomaly list and signed evidence package per release</text>
+<text x="569.1" y="752.8" font-size="13" font-weight="600" text-anchor="middle" fill="#E2E8F0">not required</text>
+<text x="697.1" y="752.8" font-size="13" font-weight="600" text-anchor="middle" fill="#E2E8F0">not required</text>
+<text x="825.1" y="752.8" font-size="13" font-weight="600" text-anchor="middle" fill="#BBF7D0">required</text>
+</svg>

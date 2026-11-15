@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="785" viewBox="0 0 720 785" role="img" aria-labelledby="one-measurement-title one-measurement-desc" font-family="Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" class="fk">
+<title id="one-measurement-title">One measurement through a driver</title>
+<desc id="one-measurement-desc">Sequence of a driver start and one measurement, in which the firmware starts the driver, the driver checks the chip through the port and returns a result, and a later call returns a value or an error code.</desc>
+<style>
+.fk{--fk-amber-soft:#F1CF93;--fk-amber-text:#8A3C0B;--fk-amber-tint:#FFF5E3;--fk-brand-text:#7A360E;--fk-canvas:#FFFFFF;--fk-frame:#E2E7EE;--fk-green-strong:#15803D;--fk-green-text:#14532D;--fk-green-tint:#EAF7EF;--fk-hair:#E2E7EE;--fk-ink:#0E1726;--fk-line:#738093;--fk-muted:#566070;--fk-rail:#7C8798;--fk-rose-strong:#DB2752;--fk-rose-text:#9F1239;--fk-rose-tint:#FFEEF2;--fk-slate-strong:#64748B;--fk-slate-text:#334155;--fk-slate-tint:#F1F4F8;--fk-teal-strong:#0B7A72;--fk-teal-text:#0B5F59;--fk-teal-tint:#E6F6F4;}
+@media (prefers-color-scheme:dark){.fk{--fk-amber-soft:#6A5220;--fk-amber-text:#FDE68A;--fk-amber-tint:#2C2310;--fk-brand-text:#F8D27A;--fk-canvas:#0E131A;--fk-frame:#283241;--fk-green-strong:#4ADE80;--fk-green-text:#BBF7D0;--fk-green-tint:#11281A;--fk-hair:#252F3C;--fk-ink:#E8EDF3;--fk-line:#6C7889;--fk-muted:#9AA6B5;--fk-rail:#6C7889;--fk-rose-strong:#FB7185;--fk-rose-text:#FECDD3;--fk-rose-tint:#321820;--fk-slate-strong:#94A3B8;--fk-slate-text:#E2E8F0;--fk-slate-tint:#1B232E;--fk-teal-strong:#2BB3A3;--fk-teal-text:#A7F3E6;--fk-teal-tint:#0F2A28;}}
+:root[data-theme="dark"] .fk,[data-md-color-scheme="slate"] .fk{--fk-amber-soft:#6A5220;--fk-amber-text:#FDE68A;--fk-amber-tint:#2C2310;--fk-brand-text:#F8D27A;--fk-canvas:#0E131A;--fk-frame:#283241;--fk-green-strong:#4ADE80;--fk-green-text:#BBF7D0;--fk-green-tint:#11281A;--fk-hair:#252F3C;--fk-ink:#E8EDF3;--fk-line:#6C7889;--fk-muted:#9AA6B5;--fk-rail:#6C7889;--fk-rose-strong:#FB7185;--fk-rose-text:#FECDD3;--fk-rose-tint:#321820;--fk-slate-strong:#94A3B8;--fk-slate-text:#E2E8F0;--fk-slate-tint:#1B232E;--fk-teal-strong:#2BB3A3;--fk-teal-text:#A7F3E6;--fk-teal-tint:#0F2A28;}
+:root[data-theme="light"] .fk,[data-md-color-scheme="default"] .fk{--fk-amber-soft:#F1CF93;--fk-amber-text:#8A3C0B;--fk-amber-tint:#FFF5E3;--fk-brand-text:#7A360E;--fk-canvas:#FFFFFF;--fk-frame:#E2E7EE;--fk-green-strong:#15803D;--fk-green-text:#14532D;--fk-green-tint:#EAF7EF;--fk-hair:#E2E7EE;--fk-ink:#0E1726;--fk-line:#738093;--fk-muted:#566070;--fk-rail:#7C8798;--fk-rose-strong:#DB2752;--fk-rose-text:#9F1239;--fk-rose-tint:#FFEEF2;--fk-slate-strong:#64748B;--fk-slate-text:#334155;--fk-slate-tint:#F1F4F8;--fk-teal-strong:#0B7A72;--fk-teal-text:#0B5F59;--fk-teal-tint:#E6F6F4;}
+.fk-f-amber-soft{fill:var(--fk-amber-soft)}.fk-s-amber-soft{stroke:var(--fk-amber-soft)}
+.fk-f-amber-text{fill:var(--fk-amber-text)}.fk-s-amber-text{stroke:var(--fk-amber-text)}
+.fk-f-amber-tint{fill:var(--fk-amber-tint)}.fk-s-amber-tint{stroke:var(--fk-amber-tint)}
+.fk-f-brand-text{fill:var(--fk-brand-text)}.fk-s-brand-text{stroke:var(--fk-brand-text)}
+.fk-f-canvas{fill:var(--fk-canvas)}.fk-s-canvas{stroke:var(--fk-canvas)}
+.fk-f-frame{fill:var(--fk-frame)}.fk-s-frame{stroke:var(--fk-frame)}
+.fk-f-green-strong{fill:var(--fk-green-strong)}.fk-s-green-strong{stroke:var(--fk-green-strong)}
+.fk-f-green-text{fill:var(--fk-green-text)}.fk-s-green-text{stroke:var(--fk-green-text)}
+.fk-f-green-tint{fill:var(--fk-green-tint)}.fk-s-green-tint{stroke:var(--fk-green-tint)}
+.fk-f-hair{fill:var(--fk-hair)}.fk-s-hair{stroke:var(--fk-hair)}
+.fk-f-ink{fill:var(--fk-ink)}.fk-s-ink{stroke:var(--fk-ink)}
+.fk-f-line{fill:var(--fk-line)}.fk-s-line{stroke:var(--fk-line)}
+.fk-f-muted{fill:var(--fk-muted)}.fk-s-muted{stroke:var(--fk-muted)}
+.fk-f-rail{fill:var(--fk-rail)}.fk-s-rail{stroke:var(--fk-rail)}
+.fk-f-rose-strong{fill:var(--fk-rose-strong)}.fk-s-rose-strong{stroke:var(--fk-rose-strong)}
+.fk-f-rose-text{fill:var(--fk-rose-text)}.fk-s-rose-text{stroke:var(--fk-rose-text)}
+.fk-f-rose-tint{fill:var(--fk-rose-tint)}.fk-s-rose-tint{stroke:var(--fk-rose-tint)}
+.fk-f-slate-strong{fill:var(--fk-slate-strong)}.fk-s-slate-strong{stroke:var(--fk-slate-strong)}
+.fk-f-slate-text{fill:var(--fk-slate-text)}.fk-s-slate-text{stroke:var(--fk-slate-text)}
+.fk-f-slate-tint{fill:var(--fk-slate-tint)}.fk-s-slate-tint{stroke:var(--fk-slate-tint)}
+.fk-f-teal-strong{fill:var(--fk-teal-strong)}.fk-s-teal-strong{stroke:var(--fk-teal-strong)}
+.fk-f-teal-text{fill:var(--fk-teal-text)}.fk-s-teal-text{stroke:var(--fk-teal-text)}
+.fk-f-teal-tint{fill:var(--fk-teal-tint)}.fk-s-teal-tint{stroke:var(--fk-teal-tint)}
+@media (forced-colors:active){.fk text{fill:CanvasText}.fk rect,.fk circle{fill:Canvas;stroke:CanvasText}.fk path{stroke:CanvasText}.fk marker path{fill:CanvasText;stroke:none}}
+</style>
+<defs><marker id="one-measurement-arrow-rail" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="fk-f-rail"/></marker></defs>
+<rect x="0.5" y="0.5" width="719" height="784" rx="16" class="fk-f-canvas fk-s-frame"/>
+<text x="32" y="44" font-size="12.5" font-weight="700" letter-spacing="1.2" class="fk-f-brand-text">KOKEB LABS</text>
+<text x="32" y="77.3" font-size="26" font-weight="700" class="fk-f-ink">One measurement through a driver</text>
+<text x="32" y="103.8" font-size="15" class="fk-f-muted">Your firmware, the driver, your port and the chip. Only the port knows about your</text>
+<text x="32" y="125.5" font-size="15" class="fk-f-muted">MCU.</text>
+<rect x="32" y="141.6" width="656" height="1" class="fk-f-hair"/>
+<path d="M105 215.6 L105 777.5" fill="none" stroke-width="1.2" stroke-dasharray="5 5" class="fk-s-line"/>
+<path d="M275 215.6 L275 777.5" fill="none" stroke-width="1.2" stroke-dasharray="5 5" class="fk-s-line"/>
+<path d="M445 215.6 L445 777.5" fill="none" stroke-width="1.2" stroke-dasharray="5 5" class="fk-s-line"/>
+<path d="M615 215.6 L615 777.5" fill="none" stroke-width="1.2" stroke-dasharray="5 5" class="fk-s-line"/>
+<path d="M109 251.6 L271 251.6" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#one-measurement-arrow-rail)" class="fk-s-rail"/>
+<path d="M279 295.6 L441 295.6" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#one-measurement-arrow-rail)" class="fk-s-rail"/>
+<path d="M449 339.6 L611 339.6" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#one-measurement-arrow-rail)" class="fk-s-rail"/>
+<path d="M611 383.6 L449 383.6" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#one-measurement-arrow-rail)" class="fk-s-rail"/>
+<path d="M441 427.6 L279 427.6" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#one-measurement-arrow-rail)" class="fk-s-rail"/>
+<path d="M279 463.6 L301 463.6 Q309 463.6 309 471.6 L309 471.6 Q309 479.6 301 479.6 L279 479.6" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#one-measurement-arrow-rail)" class="fk-s-rail"/>
+<path d="M271 515.5 L109 515.5" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#one-measurement-arrow-rail)" class="fk-s-rail"/>
+<path d="M109 559.5 L271 559.5" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#one-measurement-arrow-rail)" class="fk-s-rail"/>
+<path d="M279 603.5 L441 603.5" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#one-measurement-arrow-rail)" class="fk-s-rail"/>
+<path d="M441 647.5 L279 647.5" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#one-measurement-arrow-rail)" class="fk-s-rail"/>
+<path d="M271 743.5 L109 743.5" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#one-measurement-arrow-rail)" class="fk-s-rail"/>
+<rect x="40" y="159.6" width="130" height="52" rx="10" stroke-width="1.4" class="fk-f-teal-tint fk-s-teal-strong"/>
+<rect x="40" y="167.6" width="4" height="36" rx="2" class="fk-f-teal-strong"/>
+<rect x="210" y="159.6" width="130" height="52" rx="10" stroke-width="1.4" class="fk-f-green-tint fk-s-green-strong"/>
+<rect x="210" y="167.6" width="4" height="36" rx="2" class="fk-f-green-strong"/>
+<rect x="380" y="159.6" width="130" height="52" rx="10" stroke-width="1.4" class="fk-f-rose-tint fk-s-rose-strong"/>
+<rect x="380" y="167.6" width="4" height="36" rx="2" class="fk-f-rose-strong"/>
+<rect x="550" y="159.6" width="130" height="52" rx="10" stroke-width="1.4" class="fk-f-slate-tint fk-s-slate-strong"/>
+<rect x="550" y="167.6" width="4" height="36" rx="2" class="fk-f-slate-strong"/>
+<rect x="375" y="675.5" width="140" height="78.7" rx="10" stroke-width="1" class="fk-f-amber-tint fk-s-amber-soft"/>
+<text x="108" y="190.1" font-size="15" font-weight="700" text-anchor="middle" class="fk-f-teal-text">Firmware</text>
+<text x="278" y="190.1" font-size="15" font-weight="700" text-anchor="middle" class="fk-f-green-text">Driver</text>
+<text x="448" y="190.1" font-size="15" font-weight="700" text-anchor="middle" class="fk-f-rose-text">Port</text>
+<text x="618" y="190.1" font-size="15" font-weight="700" text-anchor="middle" class="fk-f-slate-text">Chip</text>
+<rect x="133.9" y="227.6" width="112.2" height="20" rx="10" class="fk-f-canvas"/>
+<text x="190" y="241.9" font-size="12" font-weight="500" text-anchor="middle" class="fk-f-muted">EnsureInitialized</text>
+<rect x="327.9" y="271.6" width="64.2" height="20" rx="10" class="fk-f-canvas"/>
+<text x="360" y="285.9" font-size="12" font-weight="500" text-anchor="middle" class="fk-f-muted">Transfer</text>
+<rect x="473.4" y="315.6" width="113.2" height="20" rx="10" class="fk-f-canvas"/>
+<text x="530" y="329.9" font-size="12" font-weight="500" text-anchor="middle" class="fk-f-muted">bytes on the bus</text>
+<rect x="508.6" y="359.6" width="42.8" height="20" rx="10" class="fk-f-canvas"/>
+<text x="530" y="373.9" font-size="12" font-weight="500" text-anchor="middle" class="fk-f-muted">reply</text>
+<rect x="338.6" y="403.6" width="42.8" height="20" rx="10" class="fk-f-canvas"/>
+<text x="360" y="417.9" font-size="12" font-weight="500" text-anchor="middle" class="fk-f-muted">reply</text>
+<rect x="313" y="461.6" width="117.3" height="20" rx="10" class="fk-f-canvas"/>
+<text x="371.6" y="475.9" font-size="12" font-weight="500" text-anchor="middle" class="fk-f-muted">check the chip ID</text>
+<rect x="165.1" y="491.6" width="49.8" height="20" rx="10" class="fk-f-canvas"/>
+<text x="190" y="505.9" font-size="12" font-weight="500" text-anchor="middle" class="fk-f-muted">Result</text>
+<rect x="157.6" y="535.5" width="64.9" height="20" rx="10" class="fk-f-canvas"/>
+<text x="190" y="549.9" font-size="12" font-weight="500" text-anchor="middle" class="fk-f-muted">measure</text>
+<rect x="327.9" y="579.5" width="64.2" height="20" rx="10" class="fk-f-canvas"/>
+<text x="360" y="593.9" font-size="12" font-weight="500" text-anchor="middle" class="fk-f-muted">Transfer</text>
+<rect x="337.1" y="623.5" width="45.8" height="20" rx="10" class="fk-f-canvas"/>
+<text x="360" y="637.9" font-size="12" font-weight="500" text-anchor="middle" class="fk-f-muted">bytes</text>
+<text x="389" y="700.6" font-size="13" class="fk-f-amber-text">only the port</text>
+<text x="389" y="719.5" font-size="13" class="fk-f-amber-text">knows your</text>
+<text x="389" y="738.3" font-size="13" class="fk-f-amber-text">MCU</text>
+<rect x="142.8" y="719.5" width="94.4" height="20" rx="10" class="fk-f-canvas"/>
+<text x="190" y="733.9" font-size="12" font-weight="500" text-anchor="middle" class="fk-f-muted">value or Error</text>
+</svg>

@@ -1,11 +1,96 @@
 {
-  "ecosystem": {
-    "title": "From your firmware to the chip",
-    "alt": "Layer diagram: your firmware calls kb-core, which calls brand-free chip drivers, which reach the hardware only through an MCU port; open boards built around the drivers are what firmware runs on; driver-template, board-template, espidf-tools and ci-tools start, build and check every repository.",
-    "description": "Top to bottom, each arrow is a call. Your firmware calls the kb-core handlers, which call chip drivers (driver-<chip>), which reach the hardware only through an MCU port, yours or a ready one from kb-core; the port drives the chip on your board. Dashed cards are planned or early. At the top right, the open boards your firmware can run on, built around the drivers. Below them, the tools that every repository uses: driver-template starts a driver, board-template starts a board, espidf-tools builds and flashes ESP-IDF projects, ci-tools checks, documents and releases them all.",
+  "assurance-levels": {
+    "title": "What each assurance level asks for",
+    "alt": "Matrix of the checks and evidence asked for at the standard, high and safety assurance levels, from lint and host tests for every repository to a signed evidence package at safety.",
+    "description": "Rows are the checks and evidence. Columns are the three assurance levels standard, high and safety. A cell says required, measured or not required in words and with a mark. Format, lint, static analysis, host tests, the strict documentation build, the sign-off check and the CI gate are required at every level. Sanitizers, a coverage floor, builds for every supported target, warning-free Doxygen on the public API and a deviation record for every suppressed finding start at high. Requirement traceability, full branch and MC/DC coverage, the coding-standard matrix with a commercial MISRA checker, an anomaly list and a signed evidence package start at safety.",
+    "profile": "detail",
+    "width": 919,
+    "source": "docs/model/assurance-levels.matrix.yml",
+    "sources": [
+      "docs/model/assurance-levels.matrix.yml"
+    ],
+    "kind": "matrix",
+    "palette": 2,
+    "print": "landscape",
+    "adaptive": true,
+    "twin": true,
+    "font": ""
+  },
+  "driver-gates": {
+    "title": "What stands between a datasheet and a release candidate",
+    "alt": "Pipeline in four columns in which a public datasheet and an independent chip model feed the CI checks, an independent review round follows, and a release candidate with a stated hardware level comes out.",
+    "description": "The Inputs column holds the public datasheet and a model of the chip written from it, apart from the driver. The CI column holds host tests with compile-fail cases, sanitizers and fuzzing, coverage and complexity limits, clang-tidy and cppcheck, and the MISRA C++:2023 scan with the C++20 profile. The Review column holds an independent review round, where mutants of every fix must be caught by a test, and a check of every claim against the code. The Release column holds the release candidate, with its tag, its documentation site and its stated hardware level.",
+    "profile": "detail",
+    "width": 1176,
+    "source": "docs/model/driver-gates.pipeline.yml",
+    "sources": [
+      "docs/model/driver-gates.pipeline.yml"
+    ],
+    "kind": "pipeline",
+    "palette": 2,
+    "print": "landscape",
+    "adaptive": true,
+    "twin": false,
+    "font": ""
+  },
+  "hardware-levels": {
+    "title": "Hardware validation levels",
+    "alt": "State machine of the three hardware validation levels H0, H1 and H2, from a host model only, to a bench rig run with logs kept, to a hardware engineer's sign-off.",
+    "description": "A driver starts at H0, where it has only been run against a model of the chip on the host. It reaches H1 when a defined bench rig has run the example and the rig document and the logs are kept. It reaches H2 when a hardware engineer has reviewed the rig and the steps and signed off. The level is written in the driver's metadata file and shown as a badge on its README.",
+    "profile": "detail",
+    "width": 640,
+    "source": "docs/model/hardware-levels.state.yml",
+    "sources": [
+      "docs/model/hardware-levels.state.yml"
+    ],
+    "kind": "state",
+    "palette": 2,
+    "print": "landscape",
+    "adaptive": true,
+    "twin": false,
+    "font": ""
+  },
+  "one-measurement": {
+    "title": "One measurement through a driver",
+    "alt": "Sequence of a driver start and one measurement, in which the firmware starts the driver, the driver checks the chip through the port and returns a result, and a later call returns a value or an error code.",
+    "description": "The Firmware calls EnsureInitialized on the Driver. The Driver sends its first transfers to the Port, which moves the bytes on the bus to the Chip and returns the replies. The Driver checks the chip identity against the datasheet and returns a Result to the Firmware. A later measurement call goes through the Port the same way, and the Driver returns either the value in physical units or an Error, never a number it could not trust.",
+    "profile": "detail",
+    "width": 720,
+    "source": "docs/model/one-measurement.seq.yml",
+    "sources": [
+      "docs/model/one-measurement.seq.yml"
+    ],
+    "kind": "seq",
+    "palette": 2,
+    "print": "landscape",
+    "adaptive": true,
+    "twin": false,
+    "font": ""
+  },
+  "request-pipeline": {
+    "title": "From a request to a release candidate",
+    "alt": "State machine of a driver request with the stages Requested, Triaged, Datasheet acquired, In design, Building, In review and Released, and a Declined end state.",
+    "description": "A request opens as Requested and becomes Triaged once a maintainer has found the part clear, not a duplicate and within scope. Datasheet acquired follows when the public documents cover the whole chip, then In design while the architecture note is written, Building while the driver, its tests and its docs are written, In review for the independent rounds and the local rehearsal of CI, and Released when a release candidate is out. A request that will not be done is Declined, with the reason in a comment.",
+    "profile": "detail",
+    "width": 640,
+    "source": "docs/model/request-pipeline.state.yml",
+    "sources": [
+      "docs/model/request-pipeline.state.yml"
+    ],
+    "kind": "state",
+    "palette": 2,
+    "print": "landscape",
+    "adaptive": true,
+    "twin": false,
+    "font": ""
+  },
+  "system-map": {
+    "title": "How Kokeb Labs fits together",
+    "alt": "System map: your firmware calls chip drivers, directly or through kb-core when it is released; a driver reaches the chip only through an MCU port; beside this path, the templates, ci-tools, the handbook and driver-requests start, check and release every repository.",
+    "description": "Top to bottom, each arrow is a call. Your firmware calls the chip drivers directly today, or through kb-core when it is released; a driver reaches the chip only through the hooks of an MCU port, which is a short class you write or a ready one for ESP32 or STM32; the port drives the chip on your board. Dashed cards are in development or at an early stage. At the top right, the open boards your firmware can run on, built around the drivers. On the right, the tooling and process every repository uses: driver-template starts a driver, board-template starts a board, ci-tools checks, documents and releases them all, the handbook holds the rules the checks enforce, espidf-tools builds and flashes ESP-IDF projects, and driver-requests takes the requests for new drivers.",
     "profile": "overview",
     "width": 1200,
-    "source": "docs/diagrams/figures/ecosystem.py",
+    "source": "docs/diagrams/figures/system-map.py",
     "sources": []
   }
 }

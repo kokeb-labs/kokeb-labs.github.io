@@ -1,0 +1,25 @@
+---
+kind: state
+id: hardware-levels
+title: Hardware validation levels
+kicker: Kokeb Labs
+subtitle: A driver states how far it has been checked on real hardware. A new driver starts at H0.
+alt: >-
+  State machine of the three hardware validation levels H0, H1 and H2, from a host model only, to a
+  bench rig run with logs kept, to a hardware engineer's sign-off.
+reads: >-
+  A driver starts at H0, where it has only been run against a model of the chip on the host. It reaches H1 when a
+  defined bench rig has run the example and the rig document and the logs are kept. It reaches H2 when a hardware
+  engineer has reviewed the rig and the steps and signed off. The level is written in the driver's metadata file and
+  shown as a badge on its README.
+direction: TB
+print: landscape
+sources: []
+states:
+  - {id: H0, tone: slate}
+  - {id: H1, tone: blue}
+  - {id: H2, tone: green}
+transitions:
+  - {from: "[*]", to: H0, label: new driver}
+  - {from: H0, to: H1, label: "bench rig runs the example, logs kept"}
+  - {from: H1, to: H2, label: hardware engineer signs off}

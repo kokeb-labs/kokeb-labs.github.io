@@ -7,6 +7,8 @@
 #   mkdocs serve                                     http://127.0.0.1:8000
 #   kokeb-docs figures                               refresh the figures
 #
+# Pin: the major tag, @v1, as every Kokeb Labs site does; CI installs the theme from the workflow's own ref. The
+# figure models under docs/model/ (state, seq, matrix, pipeline) need ci-tools 1.22.0 or later, which v1 includes.
 # Pages: docs/, order: docs/.nav.yml, rules: docs/DOCS-STYLE-GUIDE.md in ci-tools.
 site_name: Kokeb Labs
 site_description: >-

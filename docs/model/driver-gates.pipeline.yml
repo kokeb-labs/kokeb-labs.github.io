@@ -1,0 +1,56 @@
+---
+kind: pipeline
+id: driver-gates
+title: What stands between a datasheet and a release candidate
+kicker: Kokeb Labs
+subtitle: Every public driver goes through these stages. The checks in the second column run on every pull request.
+alt: >-
+  Pipeline in four columns in which a public datasheet and an independent chip model feed the CI
+  checks, an independent review round follows, and a release candidate with a stated hardware level
+  comes out.
+reads: >-
+  The Inputs column holds the public datasheet and a model of the chip written from it, apart from the driver. The CI
+  column holds host tests with compile-fail cases, sanitizers and fuzzing, coverage and complexity limits, clang-tidy
+  and
+  cppcheck, and the MISRA C++:2023 scan with the C++20 profile. The Review column holds an independent review round,
+  where mutants of every fix must be caught by a test, and a check of every claim against the code. The Release column
+  holds the release candidate, with its tag, its documentation site and its stated hardware level.
+print: landscape
+sources: []
+columns:
+  - id: inputs
+    title: Inputs
+    tone: slate
+    items:
+      - {id: sheet, title: Public datasheet, lines: ["no NDA, no login"]}
+      - {id: model, title: Chip model, lines: ["written from the datasheet, not from the driver"]}
+  - id: ci
+    title: CI
+    tone: blue
+    items:
+      - {id: tests, title: Host tests, lines: ["error paths forced, compile-fail cases"]}
+      - {id: fuzz, title: Sanitizers and fuzzing, lines: ["corrupted replies, resets at any point"]}
+      - {id: limits, title: Coverage and complexity, lines: ["85 % lines, 75 % branches"]}
+      - {id: misra, title: MISRA C++:2023 scan, lines: [with the C++20 profile]}
+  - id: review
+    title: Review
+    tone: amber
+    items:
+      - {id: round, title: Independent review rounds, lines: [reviewer did not write the code]}
+      - {id: mutants, title: Mutants of every fix, lines: [a test must fail on each]}
+  - id: release
+    title: Release
+    tone: green
+    items:
+      - id: rc
+        title: Release candidate
+        lines: ["tag vX.Y.Z-rc.N", "docs published under the tag", "hardware level stated"]
+links:
+  - {from: sheet, to: tests}
+  - {from: model, to: tests}
+  - {from: tests, to: round}
+  - {from: fuzz, to: round}
+  - {from: limits, to: round}
+  - {from: misra, to: round}
+  - {from: round, to: rc}
+  - {from: mutants, to: rc}

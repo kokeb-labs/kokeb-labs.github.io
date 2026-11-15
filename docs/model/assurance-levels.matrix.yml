@@ -1,0 +1,61 @@
+---
+kind: matrix
+id: assurance-levels
+title: What each assurance level asks for
+kicker: Kokeb Labs
+subtitle: Each level includes everything below it. Drivers are built at high; safety is chosen per component.
+alt: >-
+  Matrix of the checks and evidence asked for at the standard, high and safety assurance levels, from
+  lint and host tests for every repository to a signed evidence package at safety.
+reads: >-
+  Rows are the checks and evidence. Columns are the three assurance levels standard, high and safety. A cell says
+  required, measured or not required in words and with a mark. Format, lint, static analysis, host tests, the strict
+  documentation build, the sign-off check and the CI gate are required at every level. Sanitizers, a coverage floor,
+  builds for every supported target, warning-free Doxygen on the public API and a deviation record for every suppressed
+  finding start at high. Requirement traceability, full branch and MC/DC coverage, the coding-standard matrix with a
+  commercial MISRA checker, an anomaly list and a signed evidence package start at safety.
+print: landscape
+sources: []
+rows:
+  - {id: base, label: "Format, lint, static analysis, host tests, docs build, DCO, CI gate"}
+  - {id: san, label: Sanitizers}
+  - {id: cov, label: "Coverage floor, lines and branches"}
+  - {id: targets, label: Builds for every supported target}
+  - {id: doxy, label: Warning-free Doxygen on the public API}
+  - {id: dev, label: Deviation record for every suppressed finding}
+  - {id: mcdc, label: MC/DC coverage}
+  - {id: trace, label: Requirements traced to code and tests}
+  - {id: commercial, label: Coding-standard matrix with a commercial MISRA checker}
+  - {id: evidence, label: Anomaly list and signed evidence package per release}
+cols: [{id: standard, label: Standard}, {id: high, label: High}, {id: safety, label: Safety}]
+cells:
+  - {row: base, col: standard, status: ok, text: required}
+  - {row: base, col: high, status: ok, text: required}
+  - {row: base, col: safety, status: ok, text: required}
+  - {row: san, col: standard, status: na, text: not required}
+  - {row: san, col: high, status: ok, text: required}
+  - {row: san, col: safety, status: ok, text: required}
+  - {row: cov, col: standard, status: na, text: not required}
+  - {row: cov, col: high, status: ok, text: required, note: "85 % / 75 %"}
+  - {row: cov, col: safety, status: ok, text: required, note: all branches}
+  - {row: targets, col: standard, status: na, text: not required}
+  - {row: targets, col: high, status: ok, text: required}
+  - {row: targets, col: safety, status: ok, text: required}
+  - {row: doxy, col: standard, status: na, text: not required}
+  - {row: doxy, col: high, status: ok, text: required}
+  - {row: doxy, col: safety, status: ok, text: required}
+  - {row: dev, col: standard, status: na, text: not required}
+  - {row: dev, col: high, status: ok, text: required}
+  - {row: dev, col: safety, status: ok, text: required}
+  - {row: mcdc, col: standard, status: na, text: not required}
+  - {row: mcdc, col: high, status: warn, text: measured}
+  - {row: mcdc, col: safety, status: ok, text: required, note: 100 %}
+  - {row: trace, col: standard, status: na, text: not required}
+  - {row: trace, col: high, status: na, text: not required}
+  - {row: trace, col: safety, status: ok, text: required}
+  - {row: commercial, col: standard, status: na, text: not required}
+  - {row: commercial, col: high, status: na, text: not required}
+  - {row: commercial, col: safety, status: ok, text: required}
+  - {row: evidence, col: standard, status: na, text: not required}
+  - {row: evidence, col: high, status: na, text: not required}
+  - {row: evidence, col: safety, status: ok, text: required}
