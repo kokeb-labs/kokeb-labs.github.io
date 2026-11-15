@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1045" viewBox="0 0 1200 1045" role="img" aria-labelledby="system-map-title system-map-desc" font-family="Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title id="system-map-title">How Kokeb Labs fits together</title>
+<desc id="system-map-desc">System map: your firmware calls chip drivers, directly or through kb-core when it is released; a driver reaches the chip only through an MCU port; beside this path, the templates, ci-tools, the handbook and driver-requests start, check and release every repository.</desc>
+<defs><marker id="system-map-arrow-rail" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6C7889"/></marker></defs>
+<rect x="0.5" y="0.5" width="1199" height="1044" rx="16" fill="#0E131A" stroke="#283241"/>
+<text x="32" y="46.8" font-size="16" font-weight="700" letter-spacing="1.2" fill="#F8D27A">KOKEB LABS</text>
+<text x="32" y="85.6" font-size="32" font-weight="700" fill="#E8EDF3">How Kokeb Labs fits together</text>
+<text x="32" y="115.4" font-size="18" fill="#9AA6B5">Each arrow is a call. Everything above the port runs on any MCU and on a laptop.</text>
+<rect x="32" y="131.4" width="1136" height="1" fill="#252F3C"/>
+<rect x="828" y="302.4" width="340" height="680" rx="16" fill="#2A2113" stroke="#6B5424" stroke-width="1.2"/>
+<path d="M293.8 242.4 L293.8 262.4 Q293.8 270.4 285.8 270.4 L249.3 270.4 Q241.3 270.4 241.3 278.4 L241.3 298.4" fill="none" stroke="#6C7889" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#system-map-arrow-rail)"/>
+<path d="M241.3 395.4 L241.3 415.4 Q241.3 423.4 249.3 423.4 L285.8 423.4 Q293.8 423.4 293.8 431.4 L293.8 451.4" fill="none" stroke="#6C7889" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#system-map-arrow-rail)"/>
+<path d="M720 242.4 L720 451.4" fill="none" stroke="#6C7889" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#system-map-arrow-rail)"/>
+<path d="M406 548.4 L406 604.4" fill="none" stroke="#6C7889" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#system-map-arrow-rail)"/>
+<path d="M406 726.4 L406 782.4" fill="none" stroke="#6C7889" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#system-map-arrow-rail)"/>
+<rect x="32" y="149.4" width="748" height="89" rx="12" fill="#0F2A28" stroke="#2BB3A3" stroke-width="1.4"/>
+<rect x="32" y="157.4" width="4" height="73" rx="2" fill="#2BB3A3"/>
+<rect x="828" y="149.4" width="340" height="138" rx="12" fill="#151C26" stroke="#6C7889" stroke-width="1" stroke-dasharray="6 4"/>
+<rect x="32" y="302.4" width="598" height="89" rx="12" fill="#151C26" stroke="#6C7889" stroke-width="1" stroke-dasharray="6 4"/>
+<rect x="32" y="455.4" width="748" height="89" rx="12" fill="#2A2113" stroke="#F4B942" stroke-width="1.4"/>
+<rect x="32" y="463.4" width="4" height="73" rx="2" fill="#F4B942"/>
+<rect x="32" y="608.4" width="748" height="114" rx="12" fill="#0F2A28" stroke="#2BB3A3" stroke-width="1.4"/>
+<rect x="32" y="616.4" width="4" height="98" rx="2" fill="#2BB3A3"/>
+<rect x="32" y="786.4" width="748" height="89" rx="12" fill="#1B232E" stroke="#94A3B8" stroke-width="1.4"/>
+<rect x="32" y="794.4" width="4" height="73" rx="2" fill="#94A3B8"/>
+<rect x="844" y="347.4" width="308" height="89" rx="12" fill="#2A2113" stroke="#F4B942" stroke-width="1.4"/>
+<rect x="844" y="355.4" width="4" height="73" rx="2" fill="#F4B942"/>
+<rect x="844" y="448.4" width="308" height="89" rx="12" fill="#2A2113" stroke="#F4B942" stroke-width="1.4"/>
+<rect x="844" y="456.4" width="4" height="73" rx="2" fill="#F4B942"/>
+<rect x="844" y="549.4" width="308" height="89" rx="12" fill="#2A2113" stroke="#F4B942" stroke-width="1.4"/>
+<rect x="844" y="557.4" width="4" height="73" rx="2" fill="#F4B942"/>
+<rect x="844" y="650.4" width="308" height="89" rx="12" fill="#2A2113" stroke="#F4B942" stroke-width="1.4"/>
+<rect x="844" y="658.4" width="4" height="73" rx="2" fill="#F4B942"/>
+<rect x="844" y="751.4" width="308" height="114" rx="12" fill="#2A2113" stroke="#F4B942" stroke-width="1.4"/>
+<rect x="844" y="759.4" width="4" height="98" rx="2" fill="#F4B942"/>
+<rect x="844" y="877.4" width="308" height="89" rx="12" fill="#2A2113" stroke="#F4B942" stroke-width="1.4"/>
+<rect x="844" y="885.4" width="4" height="73" rx="2" fill="#F4B942"/>
+<text x="56" y="184.4" font-size="20" font-weight="700" fill="#A7F3E6">Your firmware</text>
+<text x="56" y="215" font-size="17" fill="#D2DAE4">a product, a board or a test bench</text>
+<text x="852" y="184.4" font-size="20" font-weight="700" fill="#E8EDF3">Open boards</text>
+<text x="852" y="215" font-size="17" fill="#D2DAE4">KiCad boards built around the</text>
+<text x="852" y="239.7" font-size="17" fill="#D2DAE4">drivers, for your firmware to run</text>
+<text x="852" y="264.4" font-size="17" fill="#D2DAE4">on; concept stage</text>
+<rect x="1096.3" y="163.4" width="57.7" height="26" rx="13" fill="#2A2113" stroke="#6B5424" stroke-width="1"/>
+<text x="1104.3" y="181.5" font-size="16" font-weight="700" fill="#F8D27A">early</text>
+<text x="56" y="337.4" font-size="20" font-weight="700" fill="#E8EDF3">kb-core</text>
+<text x="56" y="368" font-size="17" fill="#D2DAE4">framework with handlers, interfaces and RTOS wrappers</text>
+<rect x="471.7" y="316.4" width="144.3" height="26" rx="13" fill="#2A2113" stroke="#6B5424" stroke-width="1"/>
+<text x="479.7" y="334.5" font-size="16" font-weight="700" fill="#F8D27A">in development</text>
+<text x="56" y="490.4" font-size="20" font-weight="700" fill="#F8D27A">Chip drivers</text>
+<text x="56" y="521" font-size="17" fill="#D2DAE4">driver-&lt;chip&gt;: 22 public, release candidate 0.1.0-rc.1; no SDK calls</text>
+<text x="56" y="643.4" font-size="20" font-weight="700" fill="#A7F3E6">MCU port</text>
+<text x="56" y="674" font-size="17" fill="#D2DAE4">transfer, GPIO and delay hooks: a class you write, or an ESP32 or STM32 port (in</text>
+<text x="56" y="698.7" font-size="17" fill="#D2DAE4">development)</text>
+<text x="56" y="821.4" font-size="20" font-weight="700" fill="#E2E8F0">The chip, on your board</text>
+<text x="56" y="852" font-size="17" fill="#D2DAE4">SPI, I2C, UART, ADC or another bus</text>
+<rect x="243" y="258.4" width="49.1" height="24" rx="12" fill="#0E131A"/>
+<text x="267.6" y="276.2" font-size="16" font-weight="500" text-anchor="middle" fill="#9AA6B5">calls</text>
+<rect x="243" y="411.4" width="49.1" height="24" rx="12" fill="#0E131A"/>
+<text x="267.6" y="429.2" font-size="16" font-weight="500" text-anchor="middle" fill="#9AA6B5">calls</text>
+<rect x="655.8" y="326.9" width="128.4" height="24" rx="12" fill="#0E131A"/>
+<text x="720" y="344.7" font-size="16" font-weight="500" text-anchor="middle" fill="#9AA6B5">directly, today</text>
+<rect x="329.4" y="564.4" width="153.2" height="24" rx="12" fill="#0E131A"/>
+<text x="406" y="582.2" font-size="16" font-weight="500" text-anchor="middle" fill="#9AA6B5">through its hooks</text>
+<rect x="346.1" y="742.4" width="119.7" height="24" rx="12" fill="#0E131A"/>
+<text x="406" y="760.2" font-size="16" font-weight="500" text-anchor="middle" fill="#9AA6B5">bus transfers</text>
+<text x="868" y="382.4" font-size="20" font-weight="700" fill="#F8D27A">driver-template</text>
+<text x="868" y="413" font-size="17" fill="#D2DAE4">starts a driver</text>
+<text x="868" y="483.4" font-size="20" font-weight="700" fill="#F8D27A">board-template</text>
+<text x="868" y="514" font-size="17" fill="#D2DAE4">starts a board</text>
+<text x="868" y="584.4" font-size="20" font-weight="700" fill="#F8D27A">ci-tools</text>
+<text x="868" y="615" font-size="17" fill="#D2DAE4">checks, documents, releases</text>
+<text x="868" y="685.4" font-size="20" font-weight="700" fill="#F8D27A">handbook</text>
+<text x="868" y="716" font-size="17" fill="#D2DAE4">the rules the checks enforce</text>
+<text x="868" y="786.4" font-size="20" font-weight="700" fill="#F8D27A">espidf-tools</text>
+<text x="868" y="817" font-size="17" fill="#D2DAE4">builds and flashes ESP-IDF</text>
+<text x="868" y="841.7" font-size="17" fill="#D2DAE4">apps</text>
+<text x="868" y="912.4" font-size="20" font-weight="700" fill="#F8D27A">driver-requests</text>
+<text x="868" y="943" font-size="17" fill="#D2DAE4">asks for a driver or a port</text>
+<text x="844" y="331.4" font-size="17" font-weight="700" fill="#F8D27A">TOOLING AND PROCESS</text>
+<rect x="32" y="994.8" width="14" height="14" rx="4" fill="#0F2A28" stroke="#2BB3A3" stroke-width="1.4"/>
+<text x="54" y="1009.4" font-size="16" fill="#9AA6B5">yours</text>
+<rect x="123.1" y="994.8" width="14" height="14" rx="4" fill="#2A2113" stroke="#F4B942" stroke-width="1.4"/>
+<text x="145.1" y="1009.4" font-size="16" fill="#9AA6B5">Kokeb Labs</text>
+<rect x="263.4" y="994.8" width="14" height="14" rx="4" fill="#1B232E" stroke="#94A3B8" stroke-width="1.4"/>
+<text x="285.4" y="1009.4" font-size="16" fill="#9AA6B5">hardware</text>
+<path d="M385.4 1002.8L415.4 1002.8" fill="none" stroke="#6C7889" stroke-width="2.2" marker-end="url(#system-map-arrow-rail)"/>
+<text x="429.4" y="1009.4" font-size="16" fill="#9AA6B5">calls</text>
+<path d="M489.8 1002.8L519.8 1002.8" fill="none" stroke="#6C7889" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#system-map-arrow-rail)"/>
+<text x="533.8" y="1009.4" font-size="16" fill="#9AA6B5">in development or early</text>
+</svg>

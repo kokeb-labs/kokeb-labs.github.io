@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1176" height="679" viewBox="0 0 1176 679" role="img" aria-labelledby="driver-gates-title driver-gates-desc" font-family="Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title id="driver-gates-title">What stands between a datasheet and a release candidate</title>
+<desc id="driver-gates-desc">Pipeline in four columns in which a public datasheet and an independent chip model feed the CI checks, an independent review round follows, and a release candidate with a stated hardware level comes out.</desc>
+<defs><marker id="driver-gates-arrow-rail" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6C7889"/></marker></defs>
+<rect x="0.5" y="0.5" width="1175" height="678" rx="16" fill="#0E131A" stroke="#283241"/>
+<text x="32" y="44" font-size="12.5" font-weight="700" letter-spacing="1.2" fill="#F8D27A">KOKEB LABS</text>
+<text x="32" y="77.3" font-size="26" font-weight="700" fill="#E8EDF3">What stands between a datasheet and a release candidate</text>
+<text x="32" y="103.8" font-size="15" fill="#9AA6B5">Every public driver goes through these stages. The checks in the second column run on every pull request.</text>
+<rect x="32" y="119.8" width="1112" height="1" fill="#252F3C"/>
+<rect x="32" y="137.8" width="230" height="511" rx="14" fill="#1B232E" stroke="#3A4656" stroke-width="1.2"/>
+<rect x="326" y="137.8" width="230" height="511" rx="14" fill="#13233A" stroke="#2B4C78" stroke-width="1.2"/>
+<rect x="620" y="137.8" width="230" height="511" rx="14" fill="#2C2310" stroke="#6A5220" stroke-width="1.2"/>
+<rect x="914" y="137.8" width="230" height="511" rx="14" fill="#11281A" stroke="#285A3A" stroke-width="1.2"/>
+<path d="M254 225.3 L291.4 225.3 Q294 225.3 294 222.7 L294 222.7 Q294 220.1 296.6 220.1 L334 220.1" fill="none" stroke="#6C7889" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#driver-gates-arrow-rail)"/>
+<path d="M254 329.3 L286 329.3 Q294 329.3 294 321.3 L294 257.5 Q294 249.5 302 249.5 L334 249.5" fill="none" stroke="#6C7889" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#driver-gates-arrow-rail)"/>
+<path d="M548 234.8 L580 234.8 Q588 234.8 588 226.8 L588 220.2 Q588 212.2 596 212.2 L628 212.2" fill="none" stroke="#6C7889" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#driver-gates-arrow-rail)"/>
+<path d="M548 348.3 L580 348.3 Q588 348.3 588 340.3 L588 241.6 Q588 233.6 596 233.6 L628 233.6" fill="none" stroke="#6C7889" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#driver-gates-arrow-rail)"/>
+<path d="M548 471.3 L580 471.3 Q588 471.3 588 463.3 L588 263 Q588 255 596 255 L628 255" fill="none" stroke="#6C7889" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#driver-gates-arrow-rail)"/>
+<path d="M548 584.8 L580 584.8 Q588 584.8 588 576.8 L588 284.4 Q588 276.4 596 276.4 L628 276.4" fill="none" stroke="#6C7889" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#driver-gates-arrow-rail)"/>
+<path d="M842 244.3 L876.1 244.3 Q882 244.3 882 238.4 L882 238.4 Q882 232.5 887.9 232.5 L922 232.5" fill="none" stroke="#6C7889" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#driver-gates-arrow-rail)"/>
+<path d="M842 348.3 L874 348.3 Q882 348.3 882 340.3 L882 282.1 Q882 274.1 890 274.1 L922 274.1" fill="none" stroke="#6C7889" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#driver-gates-arrow-rail)"/>
+<rect x="44" y="190.8" width="206" height="69" rx="10" fill="#151C26" stroke="#6C7889" stroke-width="1"/>
+<rect x="44" y="198.8" width="4" height="53" rx="2" fill="#94A3B8"/>
+<rect x="44" y="275.8" width="206" height="107" rx="10" fill="#151C26" stroke="#6C7889" stroke-width="1"/>
+<rect x="44" y="283.8" width="4" height="91" rx="2" fill="#94A3B8"/>
+<rect x="338" y="190.8" width="206" height="88" rx="10" fill="#151C26" stroke="#6C7889" stroke-width="1"/>
+<rect x="338" y="198.8" width="4" height="72" rx="2" fill="#60A5FA"/>
+<rect x="338" y="294.8" width="206" height="107" rx="10" fill="#151C26" stroke="#6C7889" stroke-width="1"/>
+<rect x="338" y="302.8" width="4" height="91" rx="2" fill="#60A5FA"/>
+<rect x="338" y="417.8" width="206" height="107" rx="10" fill="#151C26" stroke="#6C7889" stroke-width="1"/>
+<rect x="338" y="425.8" width="4" height="91" rx="2" fill="#60A5FA"/>
+<rect x="338" y="540.8" width="206" height="88" rx="10" fill="#151C26" stroke="#6C7889" stroke-width="1"/>
+<rect x="338" y="548.8" width="4" height="72" rx="2" fill="#60A5FA"/>
+<rect x="632" y="190.8" width="206" height="107" rx="10" fill="#151C26" stroke="#6C7889" stroke-width="1"/>
+<rect x="632" y="198.8" width="4" height="91" rx="2" fill="#FBBF24"/>
+<rect x="632" y="313.8" width="206" height="69" rx="10" fill="#151C26" stroke="#6C7889" stroke-width="1"/>
+<rect x="632" y="321.8" width="4" height="53" rx="2" fill="#FBBF24"/>
+<rect x="926" y="190.8" width="206" height="125" rx="10" fill="#151C26" stroke="#6C7889" stroke-width="1"/>
+<rect x="926" y="198.8" width="4" height="109" rx="2" fill="#4ADE80"/>
+<text x="48" y="162.8" font-size="13" font-weight="700" fill="#E2E8F0">INPUTS</text>
+<text x="342" y="162.8" font-size="13" font-weight="700" fill="#BFDBFE">CI</text>
+<text x="636" y="162.8" font-size="13" font-weight="700" fill="#FDE68A">REVIEW</text>
+<text x="930" y="162.8" font-size="13" font-weight="700" fill="#BBF7D0">RELEASE</text>
+<text x="64" y="217.6" font-size="15" font-weight="700" fill="#E8EDF3">Public datasheet</text>
+<text x="64" y="242.4" font-size="13" fill="#D2DAE4">no NDA, no login</text>
+<text x="64" y="302.6" font-size="15" font-weight="700" fill="#E8EDF3">Chip model</text>
+<text x="64" y="327.4" font-size="13" fill="#D2DAE4">written from the</text>
+<text x="64" y="346.2" font-size="13" fill="#D2DAE4">datasheet, not from the</text>
+<text x="64" y="365.1" font-size="13" fill="#D2DAE4">driver</text>
+<text x="358" y="217.6" font-size="15" font-weight="700" fill="#E8EDF3">Host tests</text>
+<text x="358" y="242.4" font-size="13" fill="#D2DAE4">error paths forced,</text>
+<text x="358" y="261.2" font-size="13" fill="#D2DAE4">compile-fail cases</text>
+<text x="358" y="321.6" font-size="15" font-weight="700" fill="#E8EDF3">Sanitizers and</text>
+<text x="358" y="341.1" font-size="15" font-weight="700" fill="#E8EDF3">fuzzing</text>
+<text x="358" y="365.9" font-size="13" fill="#D2DAE4">corrupted replies, resets</text>
+<text x="358" y="384.8" font-size="13" fill="#D2DAE4">at any point</text>
+<text x="358" y="444.6" font-size="15" font-weight="700" fill="#E8EDF3">Coverage and</text>
+<text x="358" y="464.1" font-size="15" font-weight="700" fill="#E8EDF3">complexity</text>
+<text x="358" y="488.9" font-size="13" fill="#D2DAE4">85 % lines, 75 %</text>
+<text x="358" y="507.8" font-size="13" fill="#D2DAE4">branches</text>
+<text x="358" y="567.5" font-size="15" font-weight="700" fill="#E8EDF3">MISRA C++:2023</text>
+<text x="358" y="587" font-size="15" font-weight="700" fill="#E8EDF3">scan</text>
+<text x="358" y="611.9" font-size="13" fill="#D2DAE4">with the C++20 profile</text>
+<text x="652" y="217.6" font-size="15" font-weight="700" fill="#E8EDF3">Independent review</text>
+<text x="652" y="237.1" font-size="15" font-weight="700" fill="#E8EDF3">rounds</text>
+<text x="652" y="261.9" font-size="13" fill="#D2DAE4">reviewer did not write the</text>
+<text x="652" y="280.8" font-size="13" fill="#D2DAE4">code</text>
+<text x="652" y="340.6" font-size="15" font-weight="700" fill="#E8EDF3">Mutants of every fix</text>
+<text x="652" y="365.4" font-size="13" fill="#D2DAE4">a test must fail on each</text>
+<text x="946" y="217.6" font-size="15" font-weight="700" fill="#E8EDF3">Release candidate</text>
+<text x="946" y="242.4" font-size="13" fill="#D2DAE4">tag vX.Y.Z-rc.N</text>
+<text x="946" y="261.2" font-size="13" fill="#D2DAE4">docs published under the</text>
+<text x="946" y="280.1" font-size="13" fill="#D2DAE4">tag</text>
+<text x="946" y="298.9" font-size="13" fill="#D2DAE4">hardware level stated</text>
+</svg>

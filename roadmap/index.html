@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="What Kokeb Labs is building, in order, and how to follow along.">
+        <meta name="description" content="What Kokeb Labs has done, what is in progress and what comes next, with no dates.">
       
       
       
@@ -99,7 +99,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Kokeb Labs">
   <meta property="og:title" content="Roadmap - Kokeb Labs">
-  <meta property="og:description" content="What Kokeb Labs is building, in order, and how to follow along.">
+  <meta property="og:description" content="What Kokeb Labs has done, what is in progress and what comes next, with no dates.">
   <meta property="og:url" content="https://kokeb-labs.github.io/roadmap/">
   <meta name="twitter:card" content="summary">
   <script>
@@ -592,6 +592,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#language-standard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Language standard
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#follow-along" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -664,6 +675,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#language-standard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Language standard
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#follow-along" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -700,35 +722,41 @@
 
 
 <h1 id="roadmap">Roadmap<a class="headerlink" href="#roadmap" title="Permanent link">&para;</a></h1>
+<p>This is where things stand, in order. We don't publish dates: a step moves to done when its evidence exists.</p>
 <div class="kb-steps">
 <ol>
 <li><strong>Foundations</strong> <span class="kb-badge kb-badge--teal">Done</span>
-   The organisation and its settings as code, <code>ci-tools</code> v1, <code>espidf-tools</code> v1, <code>driver-template</code>, the documentation
-   platform and this site.</li>
-<li><strong>Chip drivers</strong> <span class="kb-badge kb-badge--amber">Next</span>
-   Drivers move in from HardFOC one chip at a time, renamed <code>driver-&lt;chip&gt;</code>, each with host tests, an ESP32 example
-   and a docs site, in the <a href="https://github.com/kokeb-labs-drivers">kokeb-labs-drivers</a> organisation.</li>
+   The organisation and its settings as code, <code>ci-tools</code> v1, <code>espidf-tools</code> v1, <code>driver-template</code>, the handbook and
+   the documentation platform, and this portal.</li>
+<li><strong>Chip drivers</strong> <span class="kb-badge kb-badge--teal">22 release candidates</span>
+   22 public drivers, each tagged <code>v0.1.0-rc.1</code> with host tests, a fuzzer, MISRA C++:2023 checks, an ESP32 example and
+   a documentation site, in the <a href="https://github.com/kokeb-labs-drivers">kokeb-labs-drivers</a> organisation. The
+   <a href="../contributing/#request-a-driver">driver request pipeline</a> decides which chip comes next.</li>
+<li><strong>Hardware validation</strong> <span class="kb-badge kb-badge--amber">Next</span>
+   Every driver is at level H0 today. A driver moves to H1 when a defined bench rig has run its example with the logs
+   kept, and to H2 when a hardware engineer signs off. A release candidate that passes the bench is tagged again, on
+   the same commit, as its release. Help with a bench is welcome: see <a href="../contributing/">contributing</a>.</li>
+<li><strong>kb-core and MCU ports</strong> <span class="kb-badge kb-badge--amber">In development</span>
+   The framework that joins drivers to interfaces, handlers and an RTOS layer, and ports for ESP32 and STM32. These
+   repositories are not public yet. Drivers stay usable without them.</li>
 <li><strong>Open boards</strong> <span class="kb-badge kb-badge--amber">Started</span>
    Open KiCad boards built around the drivers, in the
    <a href="https://github.com/kokeb-labs-open-boards">kokeb-labs-open-boards</a> organisation, each traced from its needs to its
    test results. <code>board-template</code>, the parts library and the circuit-block library exist; the first board, a BMP581
-   breakout, is at concept stage.</li>
-<li><strong>kb-core</strong>
-   One repository with <code>kb::utils</code>, <code>kb::rtos</code>, <code>kb::interfaces</code> and <code>kb::handlers</code>. Pick your MCU, RTOS and drivers
-   in one CMake file; only what you pick is built.</li>
-<li><strong>MCU ports</strong>
-   Ready-made ports under <code>interfaces/mcu/&lt;family&gt;/</code>, starting with ESP32, then STM32 and the host.</li>
-<li><strong>HardFOC on Kokeb</strong>
-   The HardFOC motor-control boards build on these drivers and kb-core.</li>
+   breakout, is at concept stage and nothing has been built or verified yet.</li>
 <li><strong>Tools for users</strong>
-   A command-line tool, a board configurator and a documentation hub.</li>
+   A command-line tool, a board configurator and a documentation hub. Planned: nothing to try yet.</li>
 </ol>
 </div>
+<h2 id="language-standard">Language standard<a class="headerlink" href="#language-standard" title="Permanent link">&para;</a></h2>
+<p>Drivers target C++20 today. The standard will move up under the <a href="../principles/#language-standard">stated policy</a>
+when every compiler we ship for supports it and the checks are ready for it, not on a date.</p>
 <h2 id="follow-along">Follow along<a class="headerlink" href="#follow-along" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Releases:</strong> watch a repository on GitHub (Watch, Custom, Releases).</li>
-<li><strong>Discussions:</strong> questions and ideas in the <a href="https://github.com/kokeb-labs/.github/discussions">discussions</a>.</li>
-<li><strong>Driver requests</strong> shape step 2: <a href="https://github.com/kokeb-labs/.github/issues/new?template=driver-request.yml">ask for a chip</a>.</li>
+<li><strong>Discussions:</strong> questions and ideas in the <a href="https://github.com/kokeb-labs/.github/discussions">kokeb-labs discussions</a>
+  and the <a href="https://github.com/kokeb-labs-drivers/.github/discussions">drivers discussions</a>.</li>
+<li><strong>Driver requests</strong> shape step 2: <a href="../contributing/#request-a-driver">ask for a chip</a>.</li>
 </ul>
 
 

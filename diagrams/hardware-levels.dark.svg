@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="506" viewBox="0 0 640 506" role="img" aria-labelledby="hardware-levels-title hardware-levels-desc" font-family="Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title id="hardware-levels-title">Hardware validation levels</title>
+<desc id="hardware-levels-desc">State machine of the three hardware validation levels H0, H1 and H2, from a host model only, to a bench rig run with logs kept, to a hardware engineer's sign-off.</desc>
+<defs><marker id="hardware-levels-arrow-rail" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6C7889"/></marker></defs>
+<rect x="0.5" y="0.5" width="639" height="505" rx="16" fill="#0E131A" stroke="#283241"/>
+<text x="32" y="44" font-size="12.5" font-weight="700" letter-spacing="1.2" fill="#F8D27A">KOKEB LABS</text>
+<text x="32" y="77.3" font-size="26" font-weight="700" fill="#E8EDF3">Hardware validation levels</text>
+<text x="32" y="103.8" font-size="15" fill="#9AA6B5">A driver states how far it has been checked on real hardware. A new driver</text>
+<text x="32" y="125.5" font-size="15" fill="#9AA6B5">starts at H0.</text>
+<rect x="32" y="141.6" width="576" height="1" fill="#252F3C"/>
+<path d="M320 185.6 L320 223.6" fill="none" stroke="#6C7889" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#hardware-levels-arrow-rail)"/>
+<path d="M320 283.6 L320 321.6" fill="none" stroke="#6C7889" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#hardware-levels-arrow-rail)"/>
+<path d="M320 381.6 L320 419.6" fill="none" stroke="#6C7889" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#hardware-levels-arrow-rail)"/>
+<rect x="245" y="227.6" width="150" height="52" rx="10" fill="#1B232E" stroke="#94A3B8" stroke-width="1.4"/>
+<rect x="245" y="235.6" width="4" height="36" rx="2" fill="#94A3B8"/>
+<rect x="245" y="325.6" width="150" height="52" rx="10" fill="#13233A" stroke="#60A5FA" stroke-width="1.4"/>
+<rect x="245" y="333.6" width="4" height="36" rx="2" fill="#60A5FA"/>
+<rect x="245" y="423.6" width="150" height="52" rx="10" fill="#11281A" stroke="#4ADE80" stroke-width="1.4"/>
+<rect x="245" y="431.6" width="4" height="36" rx="2" fill="#4ADE80"/>
+<circle cx="320" cy="170.6" r="11" fill="#D2DAE4"/>
+<text x="323" y="258.1" font-size="15" font-weight="700" text-anchor="middle" fill="#E2E8F0">H0</text>
+<text x="323" y="356.1" font-size="15" font-weight="700" text-anchor="middle" fill="#BFDBFE">H1</text>
+<text x="323" y="454.1" font-size="15" font-weight="700" text-anchor="middle" fill="#BBF7D0">H2</text>
+<rect x="328.1" y="194.6" width="76.7" height="20" rx="10" fill="#0E131A"/>
+<text x="366.5" y="208.9" font-size="12" font-weight="500" text-anchor="middle" fill="#9AA6B5">new driver</text>
+<rect x="328.1" y="292.6" width="240.7" height="20" rx="10" fill="#0E131A"/>
+<text x="448.5" y="306.9" font-size="12" font-weight="500" text-anchor="middle" fill="#9AA6B5">bench rig runs the example, logs kept</text>
+<rect x="327.8" y="390.6" width="183.5" height="20" rx="10" fill="#0E131A"/>
+<text x="419.5" y="404.9" font-size="12" font-weight="500" text-anchor="middle" fill="#9AA6B5">hardware engineer signs off</text>
+</svg>

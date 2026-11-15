@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="1044" viewBox="0 0 640 1044" role="img" aria-labelledby="request-pipeline-title request-pipeline-desc" font-family="Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title id="request-pipeline-title">From a request to a release candidate</title>
+<desc id="request-pipeline-desc">State machine of a driver request with the stages Requested, Triaged, Datasheet acquired, In design, Building, In review and Released, and a Declined end state.</desc>
+<defs><marker id="request-pipeline-arrow-rail" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7C8798"/></marker></defs>
+<rect x="0.5" y="0.5" width="639" height="1043" rx="16" fill="#FFFFFF" stroke="#E2E7EE"/>
+<text x="32" y="44" font-size="12.5" font-weight="700" letter-spacing="1.2" fill="#7A360E">CONTRIBUTING</text>
+<text x="32" y="77.3" font-size="26" font-weight="700" fill="#0E1726">From a request to a release candidate</text>
+<text x="32" y="103.8" font-size="15" fill="#566070">The stages a driver request moves through on the Driver pipeline board.</text>
+<rect x="32" y="119.8" width="576" height="1" fill="#E2E7EE"/>
+<path d="M331 163.8 L331 225.8" fill="none" stroke="#7C8798" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#request-pipeline-arrow-rail)"/>
+<path d="M331 285.8 L331 347.8" fill="none" stroke="#7C8798" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#request-pipeline-arrow-rail)"/>
+<path d="M270 407.8 L270 416 Q270 424 262 424 L225 424 Q217 424 217 432 L217 469.8" fill="none" stroke="#7C8798" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#request-pipeline-arrow-rail)"/>
+<path d="M217 529.8 L217 591.8" fill="none" stroke="#7C8798" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#request-pipeline-arrow-rail)"/>
+<path d="M217 651.8 L217 713.8" fill="none" stroke="#7C8798" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#request-pipeline-arrow-rail)"/>
+<path d="M217 773.8 L217 835.8" fill="none" stroke="#7C8798" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#request-pipeline-arrow-rail)"/>
+<path d="M217 895.8 L217 957.8" fill="none" stroke="#7C8798" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#request-pipeline-arrow-rail)"/>
+<path d="M392 407.8 L392 445.6 Q392 453.6 400 453.6 L437 453.6 Q445 453.6 445 461.6 L445 469.8" fill="none" stroke="#7C8798" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#request-pipeline-arrow-rail)"/>
+<rect x="256" y="229.8" width="150" height="52" rx="10" fill="#F1F4F8" stroke="#64748B" stroke-width="1.4"/>
+<rect x="256" y="237.8" width="4" height="36" rx="2" fill="#64748B"/>
+<rect x="256" y="351.8" width="150" height="52" rx="10" fill="#EAF2FF" stroke="#2563EB" stroke-width="1.4"/>
+<rect x="256" y="359.8" width="4" height="36" rx="2" fill="#2563EB"/>
+<rect x="120" y="473.8" width="194" height="52" rx="10" fill="#EAF2FF" stroke="#2563EB" stroke-width="1.4"/>
+<rect x="120" y="481.8" width="4" height="36" rx="2" fill="#2563EB"/>
+<rect x="142" y="595.8" width="150" height="52" rx="10" fill="#E6F6F4" stroke="#0B7A72" stroke-width="1.4"/>
+<rect x="142" y="603.8" width="4" height="36" rx="2" fill="#0B7A72"/>
+<rect x="142" y="717.8" width="150" height="52" rx="10" fill="#E6F6F4" stroke="#0B7A72" stroke-width="1.4"/>
+<rect x="142" y="725.8" width="4" height="36" rx="2" fill="#0B7A72"/>
+<rect x="142" y="839.8" width="150" height="52" rx="10" fill="#FFF5E3" stroke="#C26A05" stroke-width="1.4"/>
+<rect x="142" y="847.8" width="4" height="36" rx="2" fill="#C26A05"/>
+<rect x="142" y="961.8" width="150" height="52" rx="10" fill="#EAF7EF" stroke="#15803D" stroke-width="1.4"/>
+<rect x="142" y="969.8" width="4" height="36" rx="2" fill="#15803D"/>
+<rect x="370" y="473.8" width="150" height="52" rx="10" fill="#FFEEF2" stroke="#DB2752" stroke-width="1.4"/>
+<rect x="370" y="481.8" width="4" height="36" rx="2" fill="#DB2752"/>
+<circle cx="331" cy="148.8" r="11" fill="#2B3442"/>
+<text x="334" y="260.3" font-size="15" font-weight="700" text-anchor="middle" fill="#334155">Requested</text>
+<text x="334" y="382.3" font-size="15" font-weight="700" text-anchor="middle" fill="#1E429F">Triaged</text>
+<text x="220" y="504.3" font-size="15" font-weight="700" text-anchor="middle" fill="#1E429F">Datasheet acquired</text>
+<text x="220" y="626.3" font-size="15" font-weight="700" text-anchor="middle" fill="#0B5F59">In design</text>
+<text x="220" y="748.3" font-size="15" font-weight="700" text-anchor="middle" fill="#0B5F59">Building</text>
+<text x="220" y="870.3" font-size="15" font-weight="700" text-anchor="middle" fill="#8A3C0B">In review</text>
+<text x="220" y="992.3" font-size="15" font-weight="700" text-anchor="middle" fill="#14532D">Released</text>
+<text x="448" y="504.3" font-size="15" font-weight="700" text-anchor="middle" fill="#9F1239">Declined</text>
+<rect x="338.8" y="184.8" width="111.4" height="20" rx="10" fill="#FFFFFF"/>
+<text x="394.5" y="199.1" font-size="12" font-weight="500" text-anchor="middle" fill="#566070">you open a form</text>
+<rect x="338.8" y="306.8" width="164.3" height="20" rx="10" fill="#FFFFFF"/>
+<text x="421" y="321.1" font-size="12" font-weight="500" text-anchor="middle" fill="#566070">part is clear and in scope</text>
+<rect x="277.8" y="414" width="161.5" height="20" rx="10" fill="#FFFFFF"/>
+<text x="358.5" y="428.3" font-size="12" font-weight="500" text-anchor="middle" fill="#566070">public documents on file</text>
+<rect x="225" y="916.8" width="47.1" height="20" rx="10" fill="#FFFFFF"/>
+<text x="248.5" y="931.1" font-size="12" font-weight="500" text-anchor="middle" fill="#566070">rc tag</text>
+<rect x="453" y="443.6" width="149" height="20" rx="10" fill="#FFFFFF"/>
+<text x="527.5" y="458" font-size="12" font-weight="500" text-anchor="middle" fill="#566070">declined with a reason</text>
+</svg>
