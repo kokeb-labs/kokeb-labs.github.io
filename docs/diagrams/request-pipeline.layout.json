@@ -1,0 +1,109 @@
+{
+ "direction": "TB",
+ "edges": [
+  {
+   "from": "@start0",
+   "to": "Requested",
+   "via": []
+  },
+  {
+   "from": "Requested",
+   "to": "Triaged",
+   "via": []
+  },
+  {
+   "from": "Triaged",
+   "to": "Datasheet acquired",
+   "via": []
+  },
+  {
+   "from": "Datasheet acquired",
+   "to": "In design",
+   "via": []
+  },
+  {
+   "from": "In design",
+   "to": "Building",
+   "via": []
+  },
+  {
+   "from": "Building",
+   "to": "In review",
+   "via": []
+  },
+  {
+   "from": "In review",
+   "to": "Released",
+   "via": []
+  },
+  {
+   "from": "Triaged",
+   "to": "Declined",
+   "via": []
+  }
+ ],
+ "engine": "graphviz dot 13.1.0 (recorded for the reader; render never reads it)",
+ "figkit_layout": 1,
+ "id": "request-pipeline",
+ "input": "ea2ffe5024f07c9ba9efb9c455d129b3405de423488d088953a252bef3352a32",
+ "nodes": {
+  "@start0": [
+   200,
+   0,
+   22,
+   22
+  ],
+  "Building": [
+   22,
+   580,
+   150,
+   52
+  ],
+  "Datasheet acquired": [
+   0,
+   336,
+   194,
+   52
+  ],
+  "Declined": [
+   250,
+   336,
+   150,
+   52
+  ],
+  "In design": [
+   22,
+   458,
+   150,
+   52
+  ],
+  "In review": [
+   22,
+   702,
+   150,
+   52
+  ],
+  "Released": [
+   22,
+   824,
+   150,
+   52
+  ],
+  "Requested": [
+   136,
+   92,
+   150,
+   52
+  ],
+  "Triaged": [
+   136,
+   214,
+   150,
+   52
+  ]
+ },
+ "size": [
+  400,
+  876
+ ]
+}

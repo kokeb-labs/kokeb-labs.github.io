@@ -1,0 +1,54 @@
+{
+ "direction": "TB",
+ "edges": [
+  {
+   "from": "@start0",
+   "to": "H0",
+   "via": []
+  },
+  {
+   "from": "H0",
+   "to": "H1",
+   "via": []
+  },
+  {
+   "from": "H1",
+   "to": "H2",
+   "via": []
+  }
+ ],
+ "engine": "graphviz dot 13.1.0 (recorded for the reader; render never reads it)",
+ "figkit_layout": 1,
+ "id": "hardware-levels",
+ "input": "d60629e4257cd530420d8030fcccfe416a4ccee137e8b374ebfd076de029e240",
+ "nodes": {
+  "@start0": [
+   64,
+   0,
+   22,
+   22
+  ],
+  "H0": [
+   0,
+   68,
+   150,
+   52
+  ],
+  "H1": [
+   0,
+   166,
+   150,
+   52
+  ],
+  "H2": [
+   0,
+   264,
+   150,
+   52
+  ]
+ },
+ "size": [
+  150,
+  316
+ ]
+}

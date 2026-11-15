@@ -1,0 +1,36 @@
+---
+kind: state
+id: request-pipeline
+title: From a request to a release candidate
+kicker: Contributing
+subtitle: The stages a driver request moves through on the Driver pipeline board.
+alt: >-
+  State machine of a driver request with the stages Requested, Triaged, Datasheet acquired, In design,
+  Building, In review and Released, and a Declined end state.
+reads: >-
+  A request opens as Requested and becomes Triaged once a maintainer has found the part clear, not a duplicate and
+  within scope. Datasheet acquired follows when the public documents cover the whole chip, then In design while the
+  architecture note is written, Building while the driver, its tests and its docs are written, In review for the
+  independent rounds and the local rehearsal of CI, and Released when a release candidate is out. A request that
+  will not be done is Declined, with the reason in a comment.
+direction: TB
+print: landscape
+sources: []
+states:
+  - {id: Requested, tone: slate}
+  - {id: Triaged, tone: blue}
+  - {id: Datasheet acquired, tone: blue}
+  - {id: In design, tone: teal}
+  - {id: Building, tone: teal}
+  - {id: In review, tone: amber}
+  - {id: Released, tone: green}
+  - {id: Declined, tone: rose}
+transitions:
+  - {from: "[*]", to: Requested, label: you open a form}
+  - {from: Requested, to: Triaged, label: part is clear and in scope}
+  - {from: Triaged, to: Datasheet acquired, label: public documents on file}
+  - {from: Datasheet acquired, to: In design}
+  - {from: In design, to: Building}
+  - {from: Building, to: In review}
+  - {from: In review, to: Released, label: rc tag}
+  - {from: Triaged, to: Declined, label: declined with a reason, dashed: true}

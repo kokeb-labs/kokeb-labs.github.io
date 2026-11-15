@@ -1,0 +1,35 @@
+---
+kind: seq
+id: one-measurement
+title: One measurement through a driver
+kicker: Kokeb Labs
+subtitle: Your firmware, the driver, your port and the chip. Only the port knows about your MCU.
+alt: >-
+  Sequence of a driver start and one measurement, in which the firmware starts the driver, the driver
+  checks the chip through the port and returns a result, and a later call returns a value or an error
+  code.
+reads: >-
+  The Firmware calls EnsureInitialized on the Driver. The Driver sends its first transfers to the Port, which moves the
+  bytes on the bus to the Chip and returns the replies. The Driver checks the chip identity against the datasheet and
+  returns a Result to the Firmware. A later measurement call goes through the Port the same way, and the Driver
+  returns either the value in physical units or an Error, never a number it could not trust.
+print: landscape
+sources: []
+participants:
+  - {id: fw, label: Firmware, tone: teal}
+  - {id: drv, label: Driver, tone: green}
+  - {id: port, label: Port, tone: rose}
+  - {id: chip, label: Chip, tone: slate}
+steps:
+  - {from: fw, to: drv, label: EnsureInitialized}
+  - {from: drv, to: port, label: Transfer}
+  - {from: port, to: chip, label: bytes on the bus}
+  - {from: chip, to: port, label: reply, return: true}
+  - {from: port, to: drv, label: reply, return: true}
+  - {from: drv, to: drv, label: check the chip ID}
+  - {from: drv, to: fw, label: Result, return: true}
+  - {from: fw, to: drv, label: measure}
+  - {from: drv, to: port, label: Transfer}
+  - {from: port, to: drv, label: bytes, return: true}
+  - {note: only the port knows your MCU, over: [port]}
+  - {from: drv, to: fw, label: value or Error, return: true}
